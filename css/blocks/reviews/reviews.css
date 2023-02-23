@@ -1,0 +1,83 @@
+.reviews__title {
+  font-family: "Alegreya Sans Bold", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 32px;
+}
+
+.reviews__content {
+  background-color: #F8FAF9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 42px;
+  margin-bottom: 15px;
+}
+
+.review__text {
+  display: inline-block;
+  margin-left: 40px;
+  max-width: 465px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews__headtxt {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+
+.review__description {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+.review__username {
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.reviews__image {
+  width: 253px;
+  height: 264px;
+}
+
+.reviews__user--girlactive {
+  background: url(../../../img/girlactive.png);
+}
+
+.reviews__user--man {
+  background: url(../../../img/man.png);
+}
+
+.reviews__user--girl2 {
+  background: url(../../../img/girl2.png);
+}
+
+.review__userlist {
+  height: 75px;
+}
+
+.review__user {
+  width: 75px;
+  height: 75px;
+}

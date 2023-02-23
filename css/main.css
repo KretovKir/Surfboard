@@ -1,19 +1,5 @@
-@font-face {
-  font-family: "Alegreya Sans";
-  src: url(/fonts/Alegreya_Sans/AlegreyaSans-Light.ttf);
-}
-@font-face {
-  font-family: "Alegreya Sans";
-  src: url(/fonts/Alegreya_Sans/AlegreyaSans-Medium.ttf);
-}
-@font-face {
-  font-family: "Alegreya Sans";
-  src: url(/fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf);
-}
-@font-face {
-  font-family: "Alegreya Sans";
-  src: url(/fonts/Alegreya_Sans/AlegreyaSans-Bold.ttf);
-}
+@import 'layout/fonts.css';
+@import 'blocks/reviews/reviews.css';
 body {
   font-family: "Alegreya Sans";
   margin: 0;
