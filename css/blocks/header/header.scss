@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 html{
     width:1100px;
 }
@@ -11,6 +15,10 @@ html{
     padding-top: 28px;
 }
 
+.header-logo{
+    margin-right: 45px;
+}
+
 .hero{
     background: url('/img/background-main.png') center, center;
     width: 100%;
@@ -20,6 +28,7 @@ html{
 .navigation__list{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .navigation__item{
