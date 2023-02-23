@@ -1,4 +1,4 @@
-@import 'css/layout/fonts.css';
-@import 'css/layout/base.css';
-@import 'css/blocks/header/header.css';
-@import 'css/blocks/why/why.css';
+@import 'layout/fonts.css';
+@import 'layout/base.css';
+@import 'blocks/header/header.css';
+@import 'blocks/why/why.css';
