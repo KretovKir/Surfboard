@@ -1,4 +1,4 @@
-@import url("css/layout/fonts.css");
-@import url("css/layout/base.css");
-@import url("css/blocks/header/header.css");
-@import url("css/blocks/why/why.css");
+@import 'css/layout/fonts.css';
+@import 'css/layout/base.css';
+@import 'css/blocks/header/header.css';
+@import 'css/blocks/why/why.css';
