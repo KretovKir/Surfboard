@@ -32,7 +32,7 @@ html {
 
 .navigation__item {
   color: white;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans Bold", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
@@ -42,7 +42,7 @@ html {
 }
 
 .telephone {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans Bold", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: white;
@@ -59,7 +59,7 @@ html {
   background: #FEDB3F;
   color: black;
   padding: 21px 41px;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans Bold", sans-serif;
   font-size: 16px;
   font-weight: 800;
   text-align: center;
@@ -71,7 +71,7 @@ html {
 .hero__title {
   max-width: 500px;
   color: white;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans Bold", sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: 58px;
@@ -81,7 +81,7 @@ html {
 }
 
 .hero__description {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans Regular", sans-serif;
   font-size: 21px;
   font-weight: 400;
   letter-spacing: 0px;
@@ -114,7 +114,7 @@ html {
   display: inline-block;
   width: 90px;
   color: white;
-  font-family: Alegreya Sans;
+  font-family: 'Alegreya Sans Bold';
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
