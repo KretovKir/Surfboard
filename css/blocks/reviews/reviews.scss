@@ -53,22 +53,38 @@
 
 .reviews__image{
     width: 253px;
-    height: 264px;
+    height: 270px;
 }
 
 
-@each $user in ('girlactive', 'man', 'girl2'){
+@each $user in (girlactive, man, girl2){
     .reviews__user--#{$user}{
         background: url(../../../img/#{$user}.png);
+        height: 75px;
+        width: 75px;
+        text-align: center; 
+        margin-right: 7px;
+        display: flex;
+        align-items: center;
+
+        &:active{
+            border: 6px solid #FEDB3F;
+            border-radius: 100px;
+        }
     }
+    
+    
 }
 
 
 .review__userlist{
     height: 75px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-.review__user{
-    width:75px;
-    height: 75px;
-}
+// .review__user{
+//     width:75px;
+//     height: 75px;
+// }
