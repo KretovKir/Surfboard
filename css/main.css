@@ -1,40 +1,7 @@
 @import 'layout/fonts.css';
+@import 'layout/base.css';
+@import 'blocks/why/why.css';
 @import 'blocks/reviews/reviews.css';
-body {
-  font-family: "Alegreya Sans";
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  list-style: none;
-}
-
-h1, h2, h3, h4 {
-  margin: 0;
-}
-
-.container {
-  width: 960px;
-  margin: 0 auto;
-}
-
-.logo {
-  width: 55px;
-  height: 39px;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -113,6 +80,7 @@ html {
   border: transparent;
   border-radius: 50px;
   margin-top: 40px;
+  cursor: pointer;
 }
 
 .hero__title {
@@ -165,53 +133,4 @@ html {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-}
-
-.why {
-  padding-top: 105px;
-  padding-bottom: 115px;
-}
-
-.why__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.why__text, .why__card {
-  text-align: center;
-}
-
-.why__title {
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 58px;
-  text-align: center;
-  color: #292929;
-}
-
-.why__description {
-  display: inline-block;
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: center;
-  max-width: 436px;
-  margin-bottom: 50px;
-  margin-top: 17px;
-}
-
-.why__card-title {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.why__card-text {
-  display: inline-block;
-  max-width: 280px;
 }

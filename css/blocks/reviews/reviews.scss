@@ -66,6 +66,7 @@
         margin-right: 7px;
         display: flex;
         align-items: center;
+        cursor: pointer;
 
         &:active{
             border: 6px solid #FEDB3F;
@@ -82,6 +83,7 @@
     display: flex;
     text-align: center;
     justify-content: center;
+    margin-bottom: 65px;
 }
 
 // .review__user{

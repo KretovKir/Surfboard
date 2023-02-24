@@ -73,6 +73,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .reviews__user--girlactive:active {
   border: 6px solid #FEDB3F;
@@ -91,6 +92,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .reviews__user--man:active {
   border: 6px solid #FEDB3F;
@@ -109,6 +111,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .reviews__user--girl2:active {
   border: 6px solid #FEDB3F;
@@ -124,4 +127,5 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 65px;
 }
