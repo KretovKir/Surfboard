@@ -57,7 +57,7 @@
 }
 
 
-@each $user in (girlactive, man, girl2){
+@each $user in (girl, man, girl2){
     .reviews__user--#{$user}{
         background: url(../../../img/#{$user}.png);
         height: 75px;
@@ -67,8 +67,9 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        border-radius: 50%;
 
-        &:active{
+        &:focus{
             border: 6px solid #FEDB3F;
             border-radius: 100px;
         }
@@ -86,7 +87,8 @@
     margin-bottom: 65px;
 }
 
-// .review__user{
-//     width:75px;
-//     height: 75px;
-// }
+.review__user{
+    width:75px;
+    height: 75px;
+    background-size: cover;
+}

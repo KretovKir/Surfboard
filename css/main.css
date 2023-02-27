@@ -2,6 +2,7 @@
 @import 'layout/base.css';
 @import 'blocks/why/why.css';
 @import 'blocks/reviews/reviews.css';
+@import 'blocks/form/form.css';
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

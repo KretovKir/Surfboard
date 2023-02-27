@@ -1,0 +1,169 @@
+.order{
+    background: url('../../../img/forms-back.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.order__title{
+    font-family: 'Alegreya Sans';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+    margin-top: 62px;
+    margin-bottom:59px;
+}
+
+.form{
+    display: flex;
+}
+
+.form__col{
+    flex: 1;
+    margin-right: 20px;
+   
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.form__row{
+    display: flex;
+    flex: 1;
+}
+
+.form__block{
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 18px;
+    text-align: left;
+    
+
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.form__input{
+    width: 100%;
+    border: 3px solid transparent;
+    padding: 18px 12px;
+    border-radius: 4px;
+
+    &:focus{
+        border: 3px solid #FEDB3F;
+        outline:none;
+    }
+}
+
+.form__content{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.form__input--textarea{
+    height: 152px;
+    width: 450px;
+    resize: none;
+}
+
+.form__title{
+    font-family: 'Alegreya Sans', sans-serif;
+    color:white;
+}
+
+.radio{
+    display: flex;
+}
+
+.radio__title{
+    color: white;
+    font-family: 'Alegreya Sans';
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.form__controls{
+    margin-right: 9px;
+    margin-bottom: 19px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.radio__visible{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+
+    &:before{
+        content:"";
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #FEDB3F;
+        position: absolute;
+        top:25%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+
+.radio__elem{
+    display: none;
+
+    &:checked ~ .radio__visible{ 
+        &::before{
+            display: block;
+        }
+    }
+}
+
+.form__btns{
+    display: flex;
+}
+
+.btn{
+    margin-right: 22px;
+}
+
+
+.btn--theme--orange{
+    background: #FFD517;
+    color: black;
+    font-family: 'Alegreya Sans';
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+        background: black;
+        color: #FFD517;
+    }
+}
+
+/*-----------------------------------------Не убирает оранжевую заливку-----------------------------*/
+.btn--theme--transparent{
+    background-color: transparent;
+    color: white;
+    font-family: 'Alegreya Sans';
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: none;
+}
+

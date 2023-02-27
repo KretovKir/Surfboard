@@ -61,8 +61,8 @@
   height: 270px;
 }
 
-.reviews__user--girlactive {
-  background: url(../../../img/girlactive.png);
+.reviews__user--girl {
+  background: url(../../../img/girl.png);
   height: 75px;
   width: 75px;
   text-align: center;
@@ -74,8 +74,9 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  border-radius: 50%;
 }
-.reviews__user--girlactive:active {
+.reviews__user--girl:focus {
   border: 6px solid #FEDB3F;
   border-radius: 100px;
 }
@@ -93,8 +94,9 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  border-radius: 50%;
 }
-.reviews__user--man:active {
+.reviews__user--man:focus {
   border: 6px solid #FEDB3F;
   border-radius: 100px;
 }
@@ -112,8 +114,9 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  border-radius: 50%;
 }
-.reviews__user--girl2:active {
+.reviews__user--girl2:focus {
   border: 6px solid #FEDB3F;
   border-radius: 100px;
 }
@@ -128,4 +131,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 65px;
+}
+
+.review__user {
+  width: 75px;
+  height: 75px;
+  background-size: cover;
 }
