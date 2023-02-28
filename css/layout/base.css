@@ -1,3 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  width: 68.75rem;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Alegreya Sans";
   margin: 0;
@@ -24,11 +35,64 @@ h1, h2, h3, h4 {
 }
 
 .container {
-  width: 960px;
+  width: 60rem;
   margin: 0 auto;
 }
 
 .logo {
-  width: 55px;
-  height: 39px;
+  width: 3.43rem;
+  height: 2.43rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 18px;
+    max-width: 768px;
+  }
+  .container {
+    max-width: 700px;
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #1968B1;
+  }
+  .navigation {
+    display: none;
+  }
+  .hero__main {
+    margin-top: 365px;
+  }
+  .hero__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-bottom: 289px;
+    margin-top: 0rem;
+  }
+  .hero__title {
+    max-width: 665px;
+  }
+  .hero__item {
+    display: none;
+  }
+  .why {
+    margin-top: 269px;
+    margin-bottom: 288px;
+  }
 }
