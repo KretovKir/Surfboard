@@ -72,7 +72,7 @@
 
 @each $user in (girl, man, girl2){
     .reviews__user--#{$user}{
-        background: url(../../../img/#{$user}.png) center/ cover no-repeat;
+        background: url(../img/#{$user}.png) center/ cover no-repeat;
         height: 75px;
         width: 75px;
         text-align: center; 
