@@ -78,6 +78,25 @@ h1, h2, h3, h4, p {
   text-transform: uppercase;
 }
 
+.btn--theme--orange {
+  background: #FFD517;
+  color: black;
+  cursor: pointer;
+  margin-right: -20px;
+}
+.btn--theme--orange:hover {
+  background: black;
+  color: #FFD517;
+}
+
+/*-----------------------------------------Не убирает оранжевую заливку-----------------------------*/
+.btn--theme--transparent {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  text-transform: none;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 16px;
@@ -289,14 +308,25 @@ h1, h2, h3, h4, p {
   color: #666;
 }
 
-.reviews__title {
-  font-family: "Alegreya Sans Bold", sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 58px;
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 32px;
+}
+
+.reviews__title {
+  margin-bottom: 32px;
 }
 
 .reviews__content {
@@ -308,52 +338,58 @@ h1, h2, h3, h4, p {
   margin-bottom: 15px;
 }
 
-.review__text {
+.reviews__text {
   display: inline-block;
   margin-left: 40px;
   max-width: 465px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  text-align: left;
+  padding-top: 27px;
 }
 
 .reviews__headtxt {
-  margin-top: 40px;
   margin-bottom: 15px;
-  font-family: "Alegreya Sans", sans-serif;
   font-size: 27px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 32px;
-  text-align: left;
 }
 
-.review__description {
-  font-family: "Alegreya Sans", sans-serif;
+.reviews__description {
   font-size: 18px;
+  line-height: 21px;
   color: #666666;
   margin-bottom: 25px;
 }
 
-.review__username {
-  font-family: "Alegreya Sans";
+.reviews__username {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
 }
 
 .reviews__image {
   width: 253px;
-  height: 270px;
+  height: 263px;
+}
+
+.review__image-item {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.review__user {
+  width: 75px;
+  height: 75px;
+  background-size: cover;
+}
+.review__user--active {
+  border: 6px solid #FEDB3F;
+  border-radius: 100px;
 }
 
 .reviews__user--girl {
-  background: url(../../../img/girl.png);
+  background: url(../../../img/girl.png) center/cover no-repeat;
   height: 75px;
   width: 75px;
   text-align: center;
@@ -367,13 +403,13 @@ h1, h2, h3, h4, p {
   cursor: pointer;
   border-radius: 50%;
 }
-.reviews__user--girl:focus {
+.reviews__user--girl:hover {
   border: 6px solid #FEDB3F;
   border-radius: 100px;
 }
 
 .reviews__user--man {
-  background: url(../../../img/man.png);
+  background: url(../../../img/man.png) center/cover no-repeat;
   height: 75px;
   width: 75px;
   text-align: center;
@@ -387,13 +423,13 @@ h1, h2, h3, h4, p {
   cursor: pointer;
   border-radius: 50%;
 }
-.reviews__user--man:focus {
+.reviews__user--man:hover {
   border: 6px solid #FEDB3F;
   border-radius: 100px;
 }
 
 .reviews__user--girl2 {
-  background: url(../../../img/girl2.png);
+  background: url(../../../img/girl2.png) center/cover no-repeat;
   height: 75px;
   width: 75px;
   text-align: center;
@@ -407,7 +443,7 @@ h1, h2, h3, h4, p {
   cursor: pointer;
   border-radius: 50%;
 }
-.reviews__user--girl2:focus {
+.reviews__user--girl2:hover {
   border: 6px solid #FEDB3F;
   border-radius: 100px;
 }
@@ -424,15 +460,33 @@ h1, h2, h3, h4, p {
   margin-bottom: 65px;
 }
 
-.review__user {
-  width: 75px;
-  height: 75px;
-  background-size: cover;
+.order {
+  background: url("../../../img/forms-back.jpg") center/cover no-repeat;
+  position: relative;
+  color: white;
+}
+.order::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  opacity: 40%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-.order {
-  background: url("../../../img/forms-back.jpg") no-repeat;
-  background-size: cover;
+.forms__container {
+  z-index: 1;
+}
+
+.order__title {
+  text-align: center;
+  margin-bottom: 59px;
+  color: white;
+}
+
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,30 +495,11 @@ h1, h2, h3, h4, p {
           justify-content: center;
 }
 
-.order__title {
-  font-family: "Alegreya Sans";
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 58px;
-  letter-spacing: 0px;
-  text-align: center;
-  color: white;
-  margin-top: 62px;
-  margin-bottom: 59px;
-}
-
-.form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 4.125rem;
-}
-
 .form__col {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 20px;
+  margin-right: 27px;
 }
 .form__col:last-child {
   margin-right: 0px;
@@ -477,15 +512,14 @@ h1, h2, h3, h4, p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-bottom: 12px;
 }
 
 .form__block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 20px;
-  margin-bottom: 18px;
-  text-align: left;
+  margin-right: 23px;
 }
 .form__block:last-child {
   margin-right: 0px;
@@ -501,39 +535,31 @@ h1, h2, h3, h4, p {
   border: 3px solid #FEDB3F;
   outline: none;
 }
-
-.form__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 15px;
-}
-
 .form__input--textarea {
   height: 152px;
-  width: 450px;
   resize: none;
+  display: block;
 }
 
 .form__title {
-  font-family: "Alegreya Sans", sans-serif;
   color: white;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 2px;
 }
 
 .radio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 18px;
+  margin-top: 0;
+}
+.radio:last-child {
+  margin-right: 0;
 }
 
 .radio__title {
-  color: white;
-  font-family: "Alegreya Sans";
   font-size: 18px;
   font-weight: 200;
   line-height: 22px;
@@ -542,14 +568,16 @@ h1, h2, h3, h4, p {
 }
 
 .form__controls {
-  margin-right: 9px;
-  margin-bottom: 19px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 38px;
+}
+.form__controls--point {
+  margin-top: 19px;
 }
 
 .radio__visible {
@@ -567,10 +595,29 @@ h1, h2, h3, h4, p {
   border-radius: 50%;
   background: #FEDB3F;
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.radio--checkbox .radio__visible {
+  border-radius: 4px;
+  position: relative;
+}
+.radio--checkbox .radio__visible::before {
+  width: 14px;
+  height: 8px;
+  background-color: transparent;
+  border-radius: 0;
+  border-left: 2px solid #FEDB3F;
+  border-bottom: 2px solid #FEDB3F;
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 .radio__elem {
@@ -584,36 +631,7 @@ h1, h2, h3, h4, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.btn {
-  margin-right: 22px;
-}
-
-.btn--theme--orange {
-  background: #FFD517;
-  color: black;
-  font-family: "Alegreya Sans";
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  cursor: pointer;
-}
-.btn--theme--orange:hover {
-  background: black;
-  color: #FFD517;
-}
-
-/*-----------------------------------------Не убирает оранжевую заливку-----------------------------*/
-.btn--theme--transparent {
-  background-color: transparent;
-  color: white;
-  font-family: "Alegreya Sans";
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  cursor: pointer;
-  text-transform: none;
+  margin-top: 45px;
 }
 
 .logo {

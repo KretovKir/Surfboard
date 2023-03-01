@@ -43,6 +43,7 @@ h1,h2,h3,h4,p{
     min-height: 600px;
     display: flex;
     align-items: center;
+    
 }
 
 .section__title{
@@ -71,6 +72,26 @@ h1,h2,h3,h4,p{
     border-radius: 100px;
     cursor: pointer;
     text-transform: uppercase;
+}
+
+
+.btn--theme--orange{
+    background: #FFD517;
+    color: black;
+    cursor: pointer;
+    margin-right: -20px;
+    &:hover{
+        background: black;
+        color: #FFD517;
+    }
+}
+
+/*-----------------------------------------Не убирает оранжевую заливку-----------------------------*/
+.btn--theme--transparent{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    text-transform: none;
 }
 
 

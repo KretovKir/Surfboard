@@ -62,7 +62,7 @@
                 </ul>
             </div>
 
-            </div>
+        
         </section>
 
         <section class="why section">
@@ -100,23 +100,23 @@
         </section>
 
         <section class="reviews section">
-            <h2 class="reviews__title section__title">ОТЗЫВЫ</h2>
             <div class="container">
+                <h2 class="reviews__title section__title">ОТЗЫВЫ</h2>
                 <div class="reviews__content">
                     <div class="reviews__image">
                         <img src="img/girl.png" class="review__image-item" alt="girl">
                     </div>
-                    <div class="review__text">
+                    <div class="reviews__text">
                         <h3 class="reviews__headtxt">Лучший дизайн</h3>
-                        <span class="review__description">Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
-                        </span>
-                        <span class="review__username">Ольга Макарова</span>
+                        <p class="reviews__description">Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
+                        </p>
+                        <p class="reviews__username">Ольга Макарова</p>
                     </div>
                 </div>
 
                 <div class="reviews__users">
                     <ul class="review__userlist">
-                        <li class="reviews__user reviews__user--girl"></li>
+                        <li class="reviews__user review__user--active reviews__user--girl"></li>
                         <li class="reviews__user reviews__user--man"></li>
                         <li class="reviews__user reviews__user--girl2"></li>
                     </ul>
@@ -125,7 +125,7 @@
         </section>
 
         <section class="order section">
-            <div class="container">
+            <div class="container forms__container">
                 <div class="order__title section__title">ЗАКАЖИТЕ ДОСКУ</div>
                 <form class="form">
                     <div class="form__col">
@@ -166,28 +166,28 @@
                     </div>
                     <div class="form__col">
                         
-                            <div class="form__row">
+                            <div class="form__row form__row--area">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
                                     <textarea class="form__input form__input--textarea"></textarea>
                                 </label>
                             </div>
-                            <div class="form__content">
-                                <div class="form__controls">
+                            
+                                <div class="form__controls ">
                                     <label class='radio'>
                                         <input type="radio" name="options" class="radio__elem">
                                         <div class="radio__visible"></div>
                                         <div class="radio__title">Оплата наличными</div>
                                     </label>
-                                </div>
-                                <div class="form__controls">
                                     <label class='radio'>
                                         <input type="radio"  name="options" class="radio__elem">
                                         <div class="radio__visible"></div>
                                         <div class="radio__title">Оплата картой</div>
                                     </label>
                                 </div>
-                                <div class="form__controls">
+                                
+                                
+                                <div class="form__controls form__controls--point">
                                     <label class='radio radio--checkbox'>
                                         <input type="checkbox" class="radio__elem">
                                         <div class="radio__visible"></div>
@@ -199,7 +199,6 @@
                                     <input type="submit" class="btn btn--theme--orange" value="ЗАКАЗАТЬ">
                                     <input type="reset" class="btn btn--theme--transparent" value="Очистить">
                                 </div>
-                            </div>
                             
                         </div>
 
@@ -209,5 +208,6 @@
             </div>
         </section>
     </div>
+</div>
 </body>
 </html>

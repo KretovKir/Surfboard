@@ -1,30 +1,38 @@
 .order{
-    background: url('../../../img/forms-back.jpg') no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
+    background: url('../../../img/forms-back.jpg') center / cover no-repeat;
+    position: relative;
+    color: white;
+    
+
+    &::before{
+    content: '';
+    position: absolute;
+    background-color: #000;
+    opacity: 40%;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    }
+}
+.forms__container{
+    z-index: 1;
 }
 
 .order__title{
-    font-family: 'Alegreya Sans';
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58px;
-    letter-spacing: 0px;
     text-align: center;
-    color: white;
-    margin-top: 62px;
     margin-bottom:59px;
+    color: white;
 }
 
 .form{
     display: flex;
-    margin-bottom: 4.125rem;
+    justify-content: center;
 }
 
 .form__col{
     flex: 1;
-    margin-right: 20px;
+    margin-right: 27px;
    
     &:last-child{
         margin-right: 0px;
@@ -34,13 +42,13 @@
 .form__row{
     display: flex;
     flex: 1;
+    margin-bottom: 12px;
 }
 
 .form__block{
     flex: 1;
-    margin-right: 20px;
-    margin-bottom: 18px;
-    text-align: left;
+    margin-right: 23px;
+    
     
 
     &:last-child{
@@ -58,33 +66,34 @@
         border: 3px solid #FEDB3F;
         outline:none;
     }
+
+    &--textarea{
+        height: 152px;
+        resize: none;
+        display: block;
+        
+    }
 }
 
-.form__content{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
 
-.form__input--textarea{
-    height: 152px;
-    width: 450px;
-    resize: none;
-}
 
 .form__title{
-    font-family: 'Alegreya Sans', sans-serif;
     color:white;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 2px;
 }
 
 .radio{
     display: flex;
+    margin-right: 18px;
+    margin-top: 0;
+    &:last-child{
+        margin-right:0;
+    }
 }
 
 .radio__title{
-    color: white;
-    font-family: 'Alegreya Sans';
     font-size: 18px;
     font-weight: 200;
     line-height: 22px;
@@ -94,11 +103,16 @@
 }
 
 .form__controls{
-    margin-right: 9px;
-    margin-bottom: 19px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+
+    &--point{
+        margin-top:19px;
+    }
 }
+
+
 
 
 .radio__visible{
@@ -116,13 +130,36 @@
         border-radius: 50%;
         background: #FEDB3F;
         position: absolute;
-        top:25%;
+        top:50%;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-50%, -50%);
+        display: none;
     }
+    
 }
 
 
+.radio--checkbox{
+    .radio__visible{
+        border-radius: 4px;
+        position: relative;
+        
+    &::before{
+        width: 14px;
+        height: 8px;
+        background-color: transparent;
+        border-radius: 0;
+        border-left: 2px solid #FEDB3F;
+        border-bottom: 2px solid #FEDB3F;
+        transform: rotate(-50deg);
+        position: absolute;
+        top:5px;
+        left: 5px;
+        
+    }  
+    }
+
+}
 .radio__elem{
     display: none;
 
@@ -135,36 +172,8 @@
 
 .form__btns{
     display: flex;
-}
-
-.btn{
-    margin-right: 22px;
+    margin-top:45px;
 }
 
 
-.btn--theme--orange{
-    background: #FFD517;
-    color: black;
-    font-family: 'Alegreya Sans';
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    cursor: pointer;
-    &:hover{
-        background: black;
-        color: #FFD517;
-    }
-}
-
-/*-----------------------------------------Не убирает оранжевую заливку-----------------------------*/
-.btn--theme--transparent{
-    background-color: transparent;
-    color: white;
-    font-family: 'Alegreya Sans';
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    cursor: pointer;
-    text-transform: none;
-}
 
