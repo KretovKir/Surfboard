@@ -1,0 +1,21 @@
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__phone {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.contacts__icon {
+  width: 13px;
+  height: 14px;
+  margin-right: 5px;
+}

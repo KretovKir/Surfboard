@@ -1,0 +1,54 @@
+.hero{
+    background: url('../img/background-main.png') center center / cover no-repeat #1968B1;
+    padding-top: 24px;
+    padding-bottom: 64px;
+    align-items: stretch;
+    color: white;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.hero__title{
+    max-width: rem(495px);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.hero__main{
+    margin-top:0px;
+}
+
+.hero__description{
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 39px;
+}
+
+.hero__list{
+    display: flex;
+    
+}
+
+.hero__item{
+    display: flex;
+
+    &:not(:last-child){
+        margin-right: 33px;
+    }
+}
+
+.hero__list-image{
+    width: 41px;
+    height: 41px;
+    margin-right: 11px;
+}
+
+.hero__item-text{
+    font-weight: 700;
+    width: 90px;
+}

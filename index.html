@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/layout/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/layout/normalize.css">
+    <link rel="stylesheet" href="scss/main.css">
     <title>Surfboard</title>
 </head>
 <body>
     <div class="wrapper">
-        <section class="hero">
-            <header class="header">
-                <div class="container header__container">
-                        <div class="header__logo"><img src="img/logo.png" alt="Surfboard"></div>
+        <section class="hero section">
+            <div class="container hero__container">
+                <header class="header">
+                    <div class="header__container">
+                        <div class="logo"><img src="img/logo.png" alt="Surfboard" class="logo__img"></div>
                         <nav class="navigation">
                             <ul class="navigation__list">
                                 <li class="navigation__item"><a href="#">О нас</a></li>
@@ -29,76 +30,77 @@
                             </ul>
                         </nav>
                         <div class="contacts">
-                            <span class="telephone">8 800 903 90 90</span>
+                            <img src="img/phone.svg" class="contacts__icon" alt="phone">
+                            <span class="contacts__phone">8 800 903 90 90</span>
                         </div>
-                </div>
-            </header>
-            
-
-                
-                <div class="hero__main">
-                    <div class="container">
-                        <div class="hero__content">
-                            <h1 class="hero__title">ПРОФЕССИОНАЛЬНЫЕ ДОСКИ ДЛЯ СЕРФИНГА</h1>
-                            <span class="hero__description">Самый большой выбор серфбордов в мире</span>
-                            <button class="btn yellow">Заказать</button>
-    
-                            <ul class="hero__list">
-                                <li class="hero__item">
-                                    <img src="img/board-icon.png" class="hero__list-image" alt="board">
-                                    <span class="hero__item-text">Уникальный дизайн</span>
-                                </li>
-                                <li class="hero__item">
-                                    <img src="img/materials-icon.png" class="hero__list-image" alt="board">
-                                    <span class="hero__item-text">Прочные материалы</span>
-                                </li>
-                                <li class="hero__item">
-                                    <img src="img/delivery-icon.png" class="hero__list-image" alt="delivery">
-                                    <span class="hero__item-text">Быстрая доставка</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <div class="burger">-_-</div>
                     </div>
-                    
+                </header>
+
+                <div class="hero__main">
+                    <div class="hero__content">
+                        <h1 class="hero__title">ПРОФЕССИОНАЛЬНЫЕ ДОСКИ ДЛЯ СЕРФИНГА</h1>
+                        <p class="hero__description">Самый большой выбор серфбордов в мире</p>
+                        <button class="btn yellow">Заказать</button>
+
+                    </div>
                 </div>
 
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <img src="img/board-icon.png" class="hero__list-image" alt="board">
+                        <span class="hero__item-text">Уникальный дизайн</span>
+                    </li>
+                    <li class="hero__item">
+                        <img src="img/materials-icon.png" class="hero__list-image" alt="board">
+                        <span class="hero__item-text">Прочные материалы</span>
+                    </li>
+                    <li class="hero__item">
+                        <img src="img/delivery-icon.png" class="hero__list-image" alt="delivery">
+                        <span class="hero__item-text">Быстрая доставка</span>
+                    </li>
+                </ul>
+            </div>
 
+            </div>
         </section>
 
-        <section class="why">
+        <section class="why section">
             <div class="container">
                 <div class="why__text">
-                    <h2 class="why__title">ПОЧЕМУ SURFBOARD?</h2>
-                    <span class="why__description">Мы создаем уникальные и качественные доски из прочных и экологичных материалов.</span>
+                    <h2 class="why__title section__title">ПОЧЕМУ SURFBOARD?</h2>
+                    <p class="why__description">Мы создаем уникальные и качественные доски из прочных и экологичных материалов.</p>
                 </div>
                 <ul class="why__cards">
-                    <li class="why__cards-item">
-                        <div class="why__card">
-                            <img src="img/circle_why.png" class="why__image" alt="circle">
+                    <li class="why__card">
+
+                            <div class="why__img-box">
+                                <img src="img/perfect.svg" class="why__image" alt="circle">
+                            </div>
                             <h3 class="why__card-title">Perfect Fit</h3>
-                            <span class="why__card-text">Мы создаем доски по индивидуальным замерам. Мы учитываем при создании ваш рост, вес и уровень подготовки.</span>
-                        </div>
+                            <p class="why__card-text">Мы создаем доски по индивидуальным замерам. Мы учитываем при создании ваш рост, вес и уровень подготовки.</p>
+
                     </li>
-                    <li class="why__cards-item">
-                        <div class="why__card">
-                            <img src="img/circle_why.png" class="why__image" alt="circle">
+                    <li class="why__card">
+                            <div class="why__img-box">
+                                <img src="img/strong.svg" class="why__image" alt="circle">
+                            </div>
                             <h3 class="why__card-title">Strong</h3>
-                            <span class="why__card-text">Мы используем только качественные и экологичные материалы. Ваша доска прослужит вам долгие годы.</span>
-                        </div>
+                            <p class="why__card-text">Мы используем только качественные и экологичные материалы. Ваша доска прослужит вам долгие годы.</p>
                     </li>
-                    <li class="why__cards-item">
-                        <div class="why__card">
-                            <img src="img/circle_why.png" class="why__image" alt="circle">
+                    <li class="why__card">
+                            <div class="why__img-box">
+                                <img src="img/unique.svg" class="why__image" alt="circle">
+                            </div>
                             <h3 class="why__card-title">Unique</h3>
-                            <span class="why__card-text">Вы станете обладателем уникального серфборда. Доска будет выполнена по вашему уникальному дизайну. </span>
-                        </div>
+                            <p class="why__card-text">Вы станете обладателем уникального серфборда. Доска будет выполнена по вашему уникальному дизайну. </p>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="reviews">
-            <h2 class="reviews__title">ОТЗЫВЫ</h2>
+        <section class="reviews section">
+            <h2 class="reviews__title section__title">ОТЗЫВЫ</h2>
             <div class="container">
                 <div class="reviews__content">
                     <div class="reviews__image">
@@ -122,9 +124,9 @@
             </div>
         </section>
 
-        <section class="order">
+        <section class="order section">
             <div class="container">
-                <div class="order__title">ЗАКАЖИТЕ ДОСКУ</div>
+                <div class="order__title section__title">ЗАКАЖИТЕ ДОСКУ</div>
                 <form class="form">
                     <div class="form__col">
                         <div class="form__row">
@@ -204,7 +206,6 @@
                         
                     </div>
                 </form>
-            </div>
             </div>
         </section>
     </div>

@@ -1,0 +1,16 @@
+.contacts{
+    display: flex;
+    align-items: center;
+}
+.contacts__phone{
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.contacts__icon{
+    width: 13px;
+    height: 14px;
+    margin-right: 5px;
+}

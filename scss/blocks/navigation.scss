@@ -1,0 +1,19 @@
+
+.navigation__list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navigation__item{
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+
+    &:not(:last-child){
+        margin-right: 22px;
+    }
+}
+
+

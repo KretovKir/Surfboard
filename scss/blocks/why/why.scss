@@ -1,0 +1,81 @@
+.why{
+    text-align: center;
+}
+.why__cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.why__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 3%;
+    position: relative;
+
+    &:first-child{
+        padding-left: 0;
+    }
+
+    &:last-child{
+        padding-right: 0;
+    }
+
+    &:not(:last-child)::before{
+        content:"";
+        position: absolute;
+        top: 60px;
+        right: -30px;
+        width: 67px;
+        height: 21px;   
+        background: url(../img/why.svg) center / contain no-repeat;
+    }
+}
+
+.why__text{
+    margin-bottom: 49px;
+}
+
+.why__img-box{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: transparent;
+    background-color: #F2F5F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.why__title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #292929;
+    margin-bottom: 20px;
+}
+
+
+
+.why__description{
+    padding: 0 27%;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #666
+}
+
+.why__card-title{
+    margin-bottom: 20px;
+    font-size: 27px;
+    line-height: 32px;
+}
+
+.why__card-text{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #666
+}

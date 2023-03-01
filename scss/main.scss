@@ -1,0 +1,16 @@
+$projectFontSize: 16px;
+
+@function rem($px){
+    @return $px/$projectFontSize + 0rem;
+}
+
+@import 'layout/base';
+
+@import 'blocks/header/header';
+@import 'blocks/why/why';
+@import 'blocks/reviews/reviews';
+@import 'blocks/form/form';
+@import 'blocks/logo';
+@import 'blocks/navigation';
+@import 'blocks/contacts';
+@import 'blocks/hero';
