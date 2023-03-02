@@ -94,103 +94,43 @@ h1,h2,h3,h4,p{
 }
 
 
-
 @media (max-width: 768px){
-    html{
-        font-size: 16px;
-        max-width: 768px;
-    }
-    .container{
-        max-width: 660px;
-    }
-    .header{
+
+    .hero__container{
+        padding-top: 0;
         display: flex;
+        flex-direction: column; 
         justify-content: space-between;
         align-items: center;
-        background: #1968B1;
+        text-align: center;
     }
 
-    .header__container{
-        margin: 0px auto;
+    .hero__title{
+        font-size: 48px;
+        line-height: 58px;
+        max-width: 665px;
     }
+
+    .container{
+        max-width: 768px;
+    }
+    .header{
+        background-color: #1968B1;
+        margin-top: 0px;
+        padding: 26px 30px;
+        width: 100%; 
+    }
+
     .navigation{
         display: none;
     }
 
-
-    .burger{
-        display: block;
-        color: white;
-    }
-
-    .contacts{
-        display: none;
-    }
-
-    .hero__main{
-        margin-top: 365px;
-    }
-
-    .hero__content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 289px;
-        margin-top:0rem;
-        max-width: 660px;
-        margin-left: auto;
-    }
-
-    .hero__title{
-        min-width:665px;
-        text-align: center;
-    }
-
-    .hero__description{
-        margin-bottom: 44px;
-        font-family: 'Alegreya Sans';
-        font-size: 16px;
-        font-weight: lighter;
-        line-height: 25px;
-        text-align: center;
-
+    .btn{
+        display: inline;
     }
 
     .hero__item{
         display: none;
     }
-
-    .why{
-        margin-top: 269px;
-        margin-bottom: 288px;
-    }
-}
-
-
-@media (max-width: 480px){
-    html{
-        max-width: 480px;
-        font-size: 16px;
-    }
-    .container{
-        max-width: 473px;
-    }
-
-    .header__container{
-        margin: 0px auto;
-    }
-    .hero__main{
-        margin-top: 260px;
-    }
     
-    .hero__content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top:0rem;
-        max-width: 480px;
-        margin-left: auto;
-    
-    }
 }

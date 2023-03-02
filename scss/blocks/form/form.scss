@@ -144,19 +144,19 @@
         border-radius: 4px;
         position: relative;
         
-    &::before{
-        width: 14px;
-        height: 8px;
-        background-color: transparent;
-        border-radius: 0;
-        border-left: 2px solid #FEDB3F;
-        border-bottom: 2px solid #FEDB3F;
-        transform: rotate(-50deg);
-        position: absolute;
-        top:5px;
-        left: 5px;
+        &::before{
+            width: 14px;
+            height: 8px;
+            background-color: transparent;
+            border-radius: 0;
+            border-left: 2px solid #FEDB3F;
+            border-bottom: 2px solid #FEDB3F;
+            transform: rotate(-50deg);
+            position: absolute;
+            top:5px;
+            left: 5px;
         
-    }  
+         }  
     }
 
 }
