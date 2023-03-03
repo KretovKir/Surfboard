@@ -34,7 +34,7 @@ h1, h2, h3, h4, p {
 }
 
 .container {
-  width: 60rem;
+  width: 940px;
   margin: 0 auto;
 }
 
@@ -275,7 +275,6 @@ h1, h2, h3, h4, p {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  margin-bottom: 20px;
   color: #666;
 }
 
@@ -339,7 +338,7 @@ h1, h2, h3, h4, p {
 
 .reviews__description {
   font-size: 18px;
-  line-height: 21px;
+  line-height: 22px;
   color: #666666;
   margin-bottom: 25px;
 }
@@ -525,6 +524,10 @@ h1, h2, h3, h4, p {
   display: block;
 }
 
+.form__row--area {
+  margin-bottom: 38px;
+}
+
 .form__title {
   color: white;
   font-size: 18px;
@@ -558,10 +561,10 @@ h1, h2, h3, h4, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 38px;
+  margin-bottom: 20px;
 }
 .form__controls--point {
-  margin-top: 19px;
+  margin-bottom: 45px;
 }
 
 .radio__visible {
@@ -615,7 +618,6 @@ h1, h2, h3, h4, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 45px;
 }
 
 .logo {
@@ -657,7 +659,7 @@ h1, h2, h3, h4, p {
 }
 
 .contacts__phone {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 18px;
   font-weight: 700;
   color: white;
