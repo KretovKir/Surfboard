@@ -43,6 +43,10 @@
     display: flex;
     flex: 1;
     margin-bottom: 12px;
+
+    &--area{
+        margin-bottom:38px;
+    }
 }
 
 .form__block{
@@ -105,10 +109,9 @@
 .form__controls{
     display: flex;
     align-items: center;
-    margin-top: 38px;
-
+    margin-bottom: 20px;
     &--point{
-        margin-top:19px;
+        margin-bottom: 45px;
     }
 }
 
@@ -156,7 +159,7 @@
             top:5px;
             left: 5px;
         
-         }  
+     }  
     }
 
 }
@@ -172,7 +175,6 @@
 
 .form__btns{
     display: flex;
-    margin-top:45px;
 }
 
 

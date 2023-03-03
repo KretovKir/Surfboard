@@ -33,7 +33,7 @@ h1,h2,h3,h4,p{
 }
 
 .container{
-    width: 60rem;
+    width: 940px;
     margin: 0 auto;
 }
 
@@ -96,6 +96,12 @@ h1,h2,h3,h4,p{
 
 @media (max-width: 768px){
 
+    .order{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .hero__container{
         padding-top: 0;
         display: flex;
@@ -131,6 +137,33 @@ h1,h2,h3,h4,p{
 
     .hero__item{
         display: none;
+    }
+
+    .forms__container{
+        max-width: 466px;
+    }
+
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form__block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form__col{
+        min-width: 100%;
+        margin-right: 0px;
+    }
+
+    .form__input--textarea{
+        min-width: 100%;
     }
     
 }
