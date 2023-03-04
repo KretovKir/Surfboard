@@ -2,9 +2,12 @@
     box-sizing: border-box;
 }
 
+//breakpoints
+$tablets: 768px;
+$mobile: 480px;
+
 html{
     font-size: $projectFontSize;
-
 }
 
 body{
@@ -33,7 +36,7 @@ h1,h2,h3,h4,p{
 }
 
 .container{
-    width: 940px;
+    width:940px;
     margin: 0 auto;
 }
 
@@ -78,14 +81,13 @@ h1,h2,h3,h4,p{
     background: #FFD517;
     color: black;
     cursor: pointer;
-    margin-right: -20px;
+
     &:hover{
         background: black;
         color: #FFD517;
     }
 }
 
-/*-----------------------------------------Не убирает оранжевую заливку-----------------------------*/
 .btn--theme--transparent{
     background-color: transparent;
     color: white;
@@ -94,76 +96,3 @@ h1,h2,h3,h4,p{
 }
 
 
-@media (max-width: 768px){
-
-    .order{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .hero__container{
-        padding-top: 0;
-        display: flex;
-        flex-direction: column; 
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero__title{
-        font-size: 48px;
-        line-height: 58px;
-        max-width: 665px;
-    }
-
-    .container{
-        max-width: 768px;
-    }
-    .header{
-        background-color: #1968B1;
-        margin-top: 0px;
-        padding: 26px 30px;
-        width: 100%; 
-    }
-
-    .navigation{
-        display: none;
-    }
-
-    .btn{
-        display: inline;
-    }
-
-    .hero__item{
-        display: none;
-    }
-
-    .forms__container{
-        max-width: 466px;
-    }
-
-
-    .form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .form__block{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .form__col{
-        min-width: 100%;
-        margin-right: 0px;
-    }
-
-    .form__input--textarea{
-        min-width: 100%;
-    }
-    
-}

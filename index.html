@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <section class="hero section">
+        <section class="hero section hero--section">
             <div class="container hero__container">
                 <header class="header">
                     <div class="header__container">
@@ -31,7 +31,7 @@
                         </nav>
                         <div class="contacts">
                             <img src="img/phone.svg" class="contacts__icon" alt="phone">
-                            <span class="contacts__phone">8 800 903 90 90</span>
+                            <span class="contacts__phone contacts__phone--header">8 800 903 90 90</span>
                         </div>
                         <div class="burger">-_-</div>
                     </div>
@@ -41,7 +41,7 @@
                     <div class="hero__content">
                         <h1 class="hero__title">ПРОФЕССИОНАЛЬНЫЕ ДОСКИ ДЛЯ СЕРФИНГА</h1>
                         <p class="hero__description">Самый большой выбор серфбордов в мире</p>
-                        <button class="btn yellow">Заказать</button>
+                        <button class="btn yellow btn--hero">Заказать</button>
 
                     </div>
                 </div>
@@ -67,6 +67,8 @@
 
         <section class="why section">
             <div class="container">
+                <div class="why__content">
+                    
                 <div class="why__text">
                     <h2 class="why__title section__title">ПОЧЕМУ SURFBOARD?</h2>
                     <p class="why__description">Мы создаем уникальные и качественные доски из прочных и экологичных материалов.</p>
@@ -96,11 +98,43 @@
                             <p class="why__card-text">Вы станете обладателем уникального серфборда. Доска будет выполнена по вашему уникальному дизайну. </p>
                     </li>
                 </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="products section">
+            <div class="container">
+                <div class="products__carousel">
+                    <div class="products__left"><img src="img/left_arrow.svg" class="carousel__left"alt="left"></div>
+                        <div class="products__item">
+                            <div class="products__item-img"><img src="img/board1.svg" class="products__image" alt="board"></div>
+                            <div class="products__item-txt">
+                                <img src="img/parametres.svg" class="parametres__icon" alt="parametres">
+                                <p class="products__title">Лонгборд 2.0</p>
+                                <p class="products__description">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</p>
+                                <div class="products__parametres">
+                                    <div class="products__parametres-height">
+                                        <p class="products__parametres-title">Длина доски</p>
+                                        <p class="products__parametres-values">от 2.5 метров</p>
+                                    </div>
+                                    <div class="products__parametres-width">
+                                        <p class="products__parametres-title">Ширина доски</p>
+                                        <p class="products__parametres-values">от 40 сантиметров</p>
+                                    </div>
+                                </div>
+                                <div class="products__item-price">
+                                    <p class="products__price">7000 ₽</p>
+                                    <input type="submit" class="btn btn--theme--orange" value="ЗАКАЗАТЬ">
+                                </div>
+                            </div>
+                        </div>
+                    <div class="products__right"><img src="img/right_arrow.svg" class="carousel__right"alt="right"></div>
+                </div>
             </div>
         </section>
 
         <section class="reviews section">
-            <div class="container">
+            <div class="container reviews--container">
                 <h2 class="reviews__title section__title">ОТЗЫВЫ</h2>
                 <div class="reviews__content">
                     <div class="reviews__image">

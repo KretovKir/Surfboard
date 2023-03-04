@@ -1,0 +1,107 @@
+.products{
+    background-color: #F8FAF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products__carousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.products__left,
+.carousel__right{
+    cursor: pointer;
+}
+
+.products__item{
+    display: flex;
+    align-items: center;
+}
+
+.products__item-img{
+    margin-right: rem(82px);
+    max-width: rem(419px);
+    max-height: rem(538px);
+}
+
+.products__image{
+    position: relative;
+    
+}
+
+// .products__image::before{
+//     content: '';
+//     background: url('img/blub.png') center/ cover no-repeat;
+//     max-width: rem(397px);
+//     max-height: rem(380px);
+//     position: absolute;
+//     top: 0px;
+//     left:0px;
+//     z-index: 1;
+// }
+
+.products__item-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: rem(371px);
+    margin-top: -50px;
+}
+
+
+.parametres__icon{
+    max-width: rem(91px);
+    max-height: rem(91px);
+    margin-bottom: 52px;
+}
+
+.products__title{
+    margin-bottom: 24px;
+    font-size: rem(36px);
+    line-height: 43px;
+    text-transform: uppercase;
+}
+
+.products__description{
+    margin-bottom: 24px;
+    font-size: rem(18px);
+    line-height: 22px;
+    color: #666666;
+}
+
+.products__parametres{
+    display: flex;
+    max-width: rem(343px);
+    margin-bottom: 24px;
+}
+
+.products__parametres-height{
+    margin-right:rem(52px);
+}
+
+.products__parametres-values{
+    font-size: rem(18px);
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.products__parametres-title{
+    color: #666666;
+}
+
+.products__item-price{
+    display: flex;
+    justify-content: space-between;
+    max-width: rem(371px);
+}
+
+.products__price{
+    font-weight: 300;
+    font-size: rem(60px);
+    line-height: 60px;
+    margin-right: rem(50px);
+}

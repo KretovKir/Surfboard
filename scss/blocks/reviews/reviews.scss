@@ -5,6 +5,7 @@
     align-items: center;
     text-align: center;
 }
+
 .reviews__title{
     margin-bottom: 32px;
 }
@@ -20,7 +21,7 @@
 .reviews__text{
     display: inline-block;
     margin-left: 40px;
-    max-width: 465px;
+    max-width: rem(465px);
     text-align: left;
     padding-top:27px;
 }
@@ -47,8 +48,8 @@
 }
 
 .reviews__image{
-    width: 253px;
-    height: 263px;
+    max-width: rem(253px);
+    max-height: rem(263px);
 }
 
 
