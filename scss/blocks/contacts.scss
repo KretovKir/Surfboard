@@ -1,12 +1,21 @@
 .contacts{
     display: flex;
     align-items: center;
+    @include tablets{
+        display: none;
+    }
 }
 .contacts__phone{
     font-size: 22px;
     line-height: 18px;
     font-weight: 700;
     color: white;
+
+    &--header{
+        @include tablets{
+            display: none;
+        }
+    }
 }
 
 .contacts__icon{

@@ -1,4 +1,8 @@
-
+.navigation{
+    @include tablets{
+        display: none;
+    }
+}
 .navigation__list{
     display: flex;
     justify-content: space-between;

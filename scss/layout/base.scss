@@ -36,8 +36,12 @@ h1,h2,h3,h4,p{
 }
 
 .container{
-    width:940px;
+    width: 940px;
     margin: 0 auto;
+
+    @include tablets{
+        width: 95%;
+    }
 }
 
 .section{
@@ -49,7 +53,7 @@ h1,h2,h3,h4,p{
 }
 
 .section__title{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #292929;

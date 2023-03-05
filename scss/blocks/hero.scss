@@ -1,17 +1,29 @@
+
 .hero{
     background: url('../img/background-main.png') center center / cover no-repeat #1968B1;
     padding-top: 24px;
     padding-bottom: 64px;
     align-items: stretch;
     color: white;
+
+    @include tablets{
+        background: url('../img/background-main.png') center top 100px / cover no-repeat #1968B1;
+        padding-bottom: 64px;
+        align-items: stretch;
+        color: white;
+    }
 }
 
 .hero__container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    @include tablets{
+        height: 100vh;
+        
+    }
 }
+
 
 .hero__title{
     max-width: rem(495px);
@@ -19,8 +31,17 @@
     font-weight: 700;
     margin-bottom: 17px;
 }
-.hero__main{
-    margin-top:0px;
+.hero__main,
+.hero__content{
+    margin-top: 0;
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex:1;
+    }
 }
 
 .hero__description{
@@ -32,6 +53,9 @@
 .hero__list{
     display: flex;
     
+    @include tablets{
+        display: none;
+    }
 }
 
 .hero__item{
