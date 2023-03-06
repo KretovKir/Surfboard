@@ -459,6 +459,23 @@ h1, h2, h3, h4, p {
   padding: 0px 3%;
   position: relative;
 }
+@media (max-width: 1023px) {
+  .why__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .why__card:first-child {
   padding-left: 0;
 }
@@ -1285,5 +1302,40 @@ h1, h2, h3, h4, p {
   font-size: 3.75rem;
   line-height: 60px;
   margin-right: 3.125rem;
+}
+
+.map {
+  background: url("../img/map.svg") center/cover no-repeat;
+}
+
+.contacts__phone--footer {
+  color: black;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.75rem auto 1.75rem auto;
+  width: 95%;
+}
+
+.footer__text {
+  font-size: 21px;
+  line-height: 24px;
+}
+
+.footer__telephone {
+  font-size: 1.3125rem;
+  line-height: 1.3125rem;
+}
+
+.socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
