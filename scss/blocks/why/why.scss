@@ -1,10 +1,18 @@
 .why{
     text-align: center;
 }
+
 .why__cards{
     display: flex;
     justify-content: space-between;
+
+    @include phones{
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+
 
 .why__card{
     display: flex;
@@ -19,12 +27,25 @@
         align-items: center;
     }
 
+    @include phones{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
     &:first-child{
         padding-left: 0;
     }
 
     &:last-child{
         padding-right: 0;
+    }
+
+    &-txt{
+        @include phones{
+        text-align: left;
+        max-width: rem(290px);
+        }   
     }
 
     &:not(:last-child)::before{
@@ -41,7 +62,11 @@
         }
     }
 
-    
+    .why__img-box{
+        @include phones{
+            margin-right: 12px;
+        }
+    }
 }
 
 .why__text{
@@ -85,6 +110,10 @@
     margin-bottom: rem(20px);
     font-size: rem(27px);
     line-height: rem(32px);
+    
+    @include phones{
+        margin-bottom: 0.25rem;  
+    }
 }
 
 .why__card-text{

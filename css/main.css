@@ -519,6 +519,17 @@ h1, h2, h3, h4, p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 480px) {
+  .why__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .why__card {
   display: -webkit-box;
@@ -551,11 +562,29 @@ h1, h2, h3, h4, p {
             align-items: center;
   }
 }
+@media (max-width: 480px) {
+  .why__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+  }
+}
 .why__card:first-child {
   padding-left: 0;
 }
 .why__card:last-child {
   padding-right: 0;
+}
+@media (max-width: 480px) {
+  .why__card-txt {
+    text-align: left;
+    max-width: 18.125rem;
+  }
 }
 .why__card:not(:last-child)::before {
   content: "";
@@ -569,6 +598,11 @@ h1, h2, h3, h4, p {
 @media (max-width: 1023px) {
   .why__card:not(:last-child)::before {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .why__card .why__img-box {
+    margin-right: 12px;
   }
 }
 
@@ -625,6 +659,11 @@ h1, h2, h3, h4, p {
   margin-bottom: 1.25rem;
   font-size: 1.6875rem;
   line-height: 2rem;
+}
+@media (max-width: 480px) {
+  .why__card-title {
+    margin-bottom: 0.25rem;
+  }
 }
 
 .why__card-text {
