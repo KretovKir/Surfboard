@@ -15,6 +15,7 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100%;
+    position: relative;
 }
 
 a{
@@ -59,10 +60,7 @@ h1,h2,h3,h4,p{
     color: #292929;
 }
 
-.burger{
-    display: none;
-    color: white;
-}
+
 
 
 .btn{
@@ -99,4 +97,66 @@ h1,h2,h3,h4,p{
     text-transform: none;
 }
 
+.hidden{
+    display: none;
+    @include tablets{
+        display: none;
+        position: absolute;
+        top: center;
+        left: center;
+        background: #313131;
+        color: white;
+        width: 100vw;
+    }
+}
+
+.hidden__list{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: rem(36px);
+        line-height: rem(72px);
+        padding-bottom: rem(135px);
+}
+
+.hidden__cross{
+    width: 90vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: rem(73px);
+    margin-top: rem(42px);
+}
+
+.cross{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.hidden__link{
+    cursor: pointer;
+}
+
+
+.burger{
+    width: 24px;
+    height: 22px;
+    display: none;
+   @include tablets{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+   }
+}
+
+.burger__plank{
+    display: block;
+    background-color: white;
+    height: 4px;
+    border-radius: 4px;
+
+}
 

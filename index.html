@@ -12,6 +12,21 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="hidden">
+            <div class="hidden__cross">
+                <img src="img/cross.svg" class ="cross" alt="close">
+            </div>
+                
+            <ul class="hidden__list">
+                <li class="hidden__item"><a href="#" class="hidden__link">О нас</a></li>
+                <li class="hidden__item"><a href="#" class="hidden__link">Серфборды</a></li>
+                <li class="hidden__item"><a href="#" class="hidden__link">Команда</a></li>
+                <li class="hidden__item"><a href="#" class="hidden__link">Меню</a></li>
+                <li class="hidden__item"><a href="#" class="hidden__link">Отзывы</a></li>
+                <li class="hidden__item"><a href="#" class="hidden__link">Как мы работаем</a></li>
+                <li class="hidden__item"><a href="#" class="hidden__link">Контакты</a></li>
+            </ul>
+        </div>
         <section class="hero section hero--section">
             <div class="container hero__container">
                 <header class="header">
@@ -32,7 +47,11 @@
                             <img src="img/phone.svg" class="contacts__icon" alt="phone">
                             <span class="contacts__phone contacts__phone--header">8 800 903 90 90</span>
                         </div>
-                        <div class="burger">-_-</div>
+                        <div class="burger">
+                            <span class="burger__plank"></span>
+                            <span class="burger__plank"></span>
+                            <span class="burger__plank"></span>
+                        </div>
                     </div>
                 </header>
 
@@ -254,5 +273,18 @@
             </div>
         </footer>
     </div>
+    <script>
+        var burger = document.querySelector('.burger');
+        var hidden = document.querySelector('.hidden');
+        var closeCross = document.querySelector('.cross');
+        
+        burger.addEventListener('click', function(event){
+            hidden.style.display='block';
+        })
+
+        closeCross.addEventListener('click', function(event){
+            hidden.style.display='none';
+        })
+    </script>
 </body>
 </html>

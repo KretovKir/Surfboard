@@ -335,6 +335,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
+  position: relative;
 }
 
 a {
@@ -383,11 +384,6 @@ h1, h2, h3, h4, p {
   color: #292929;
 }
 
-.burger {
-  display: none;
-  color: white;
-}
-
 .btn {
   display: block;
   background: #FEDB3F;
@@ -418,6 +414,95 @@ h1, h2, h3, h4, p {
   color: white;
   cursor: pointer;
   text-transform: none;
+}
+
+.hidden {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .hidden {
+    display: none;
+    position: absolute;
+    top: center;
+    left: center;
+    background: #313131;
+    color: white;
+    width: 100vw;
+  }
+}
+
+.hidden__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 4.5rem;
+  padding-bottom: 8.4375rem;
+}
+
+.hidden__cross {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 4.5625rem;
+  margin-top: 2.625rem;
+}
+
+.cross {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
+.hidden__link {
+  cursor: pointer;
+}
+
+.burger {
+  width: 24px;
+  height: 22px;
+  display: none;
+}
+@media (max-width: 1023px) {
+  .burger {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer;
+  }
+}
+
+.burger__plank {
+  display: block;
+  background-color: white;
+  height: 4px;
+  border-radius: 4px;
 }
 
 .header__container {
