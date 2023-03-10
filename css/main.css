@@ -620,7 +620,7 @@ h1, h2, h3, h4, p {
 }
 @media (max-width: 480px) {
   .why__card .why__img-box {
-    margin-right: 12px;
+    margin-right: 0.75rem;
   }
 }
 

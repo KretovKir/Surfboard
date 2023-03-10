@@ -64,7 +64,7 @@
 
     .why__img-box{
         @include phones{
-            margin-right: 12px;
+            margin-right: rem(12px);
         }
     }
 }
