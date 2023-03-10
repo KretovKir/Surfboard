@@ -847,7 +847,7 @@ h1, h2, h3, h4, p {
 
 @media (max-width: 1023px) {
   .reviews__users {
-    margin-bottom: 180px;
+    margin-bottom: 11.25rem;
   }
 }
 
