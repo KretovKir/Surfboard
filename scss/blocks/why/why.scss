@@ -69,6 +69,15 @@
     }
 }
 
+.why__content{
+    @include phones{
+        margin-bottom: rem(65px);
+    }
+    @include tablets{
+        margin-bottom: rem(65px);
+    }
+}
+
 .why__text{
     margin-bottom: rem(49px);
     display: flex;
@@ -93,6 +102,13 @@
 .why__title{
     color: #292929;
     margin-bottom: rem(20px);
+    @include phones{
+        max-width: rem(410px);
+        margin-top: rem(50px);
+    }
+    @include tablets{
+        margin-top: rem(53px);
+    }
 }
 
 
@@ -103,7 +119,11 @@
     font-size: rem(18px);
     line-height: 21px;
     font-weight: 400;
-    color: #666
+    color: #666;
+    @include phones{
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
 .why__card-title{

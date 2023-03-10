@@ -50,6 +50,16 @@ h1,h2,h3,h4,p{
     min-height: 600px;
     display: flex;
     align-items: center;
+
+    @include tablets{
+        height: auto;
+        min-height: auto;
+    }
+
+    @include phones{
+        height: auto;
+        min-height: auto;
+    }
     
 }
 
@@ -58,6 +68,10 @@ h1,h2,h3,h4,p{
     font-weight: 700;
     text-transform: uppercase;
     color: #292929;
+    @include phones{
+        font-size: 40px;
+        line-height: 36px
+    }
 }
 
 

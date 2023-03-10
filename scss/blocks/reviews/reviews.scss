@@ -8,7 +8,11 @@
 
 .reviews__title{
     margin-bottom: 32px;
+    @include tablets{
+        margin-top: rem(180px);
+    }
 }
+
 
 
 .reviews__content{
@@ -22,7 +26,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
     }
 }
 
@@ -94,6 +97,13 @@
         border: 6px solid #FEDB3F;
         border-radius: 100px;
     }
+    
+}
+
+.reviews__users{
+    @include tablets{
+        margin-bottom: 180px;
+    }
 }
 
 @each $user in (girl, man, girl2){
@@ -124,6 +134,7 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 65px;
+    
 }
 
 

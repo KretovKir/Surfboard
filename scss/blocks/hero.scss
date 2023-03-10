@@ -30,6 +30,10 @@
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 17px;
+    @include phones{
+        font-size: 40px;
+        line-height: 36px;
+    }
 }
 .hero__main,
 .hero__content{
