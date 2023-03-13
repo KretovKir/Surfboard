@@ -1,5 +1,9 @@
-.contacts__phone--footer {
-  color: black;
+.footer {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .footer__content {

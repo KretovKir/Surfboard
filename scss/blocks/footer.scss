@@ -1,17 +1,21 @@
-.contacts__phone--footer{
-    color: black;
+.footer{
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-
 .footer__content{
     display: flex;
     justify-content: space-between;
-    margin: rem(28px) auto rem(28px) auto; 
-    width: 95%;
+    align-items: center;
+    padding-top: rem(17px);
+    padding-bottom: rem(17px);
 }
 
 .footer__text{
-    font-size: 21px;
-    line-height: 24px;
+    font-size: rem(21px);
+    line-height: rem(24px);
 }
 
 .footer__telephone{
@@ -19,6 +23,33 @@
     line-height: rem(21px);
 }
 
-.socials__list{
+.social__list{
     display: flex;
+    align-items: center;
+}
+
+.social__item{
+    margin-right: rem(14px);
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.social__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(20px);
+    height: rem(20px);
+    color: #B3B3B3;
+    transition: .3s;
+
+    &:hover{
+        color: #292929;
+    }
+}
+.social__icon{
+   width: 100%;
+   height: 100%;
 }

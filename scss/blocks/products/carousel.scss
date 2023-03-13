@@ -66,14 +66,27 @@
     flex-direction: column;
     justify-content: space-between;
     max-width: rem(371px);
-    
+    align-items:flex-start;
     @include tablets{
         text-align: center;
     }
 }
 
+.products__dropdown{
+    display: inline-block;
+    position: relative;
 
-.parametres__icon{
+    &:hover{
+        .dropdown{
+            left: 100%;
+            opacity: 1;
+        }
+        
+    }
+}
+
+
+.products__dropdown-icon{
     max-width: rem(91px);
     max-height: rem(91px);
     margin-bottom: 52px;
@@ -81,6 +94,8 @@
         display: none;
     }
 }
+
+
 
 .products__title{
     margin-bottom: 24px;
