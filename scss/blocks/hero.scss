@@ -33,7 +33,8 @@
     @include tablets{
         max-width: 665px;
     }
-    @include phones{
+    @include phone{
+        width: rem(473px);
         font-size: rem(40px);
         line-height: rem(36px);
     }
@@ -53,7 +54,7 @@
 }
 
 .hero__content{
-    padding-top: rem(142px);
+    padding-top: 7.275rem;
 }
 
 .hero__description{

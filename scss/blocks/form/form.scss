@@ -32,6 +32,9 @@
     @include tablets{
         margin-bottom: rem(30px);
     }
+    @include phone{
+        margin-bottom: rem(41px);
+    }
 }
 
 .form{
@@ -143,6 +146,10 @@
 
     &--point{
         margin-bottom: 45px;
+    }
+
+    @include phone{
+        justify-content: center;
     }
 }
 

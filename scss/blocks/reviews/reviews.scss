@@ -8,7 +8,9 @@
 
 .reviews__title{
     margin-bottom: 32px;
-    @include tablets{
+    @include phone{
+        margin: 0;
+        padding-top: rem(97px);
         
     }
 }
@@ -20,6 +22,7 @@
     display: flex;
     padding: 42px;
     margin-bottom: 15px;
+    margin-top: rem(26px);
     
     @include tablets{
         flex-direction: column;

@@ -1,5 +1,8 @@
 .header{
     padding: 0 rem(13px);
+    @include phone{
+        padding: 0;
+    }
 }
 .header__container{
     display: flex;

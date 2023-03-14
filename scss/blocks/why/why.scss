@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @include phones {
+  @include phone {
     display: flex;
     flex-direction: column;
   }
@@ -19,6 +19,7 @@
   align-items: center;
   padding: 0px 3%;
   position: relative;
+  
   @include tablets {
     display: flex;
     flex-direction: column;
@@ -26,24 +27,27 @@
     align-items: center;
   }
 
-  @include phones {
+  @include phone {
     display: flex;
     flex-direction: row;
     text-align: center;
+    margin-bottom: rem(39px);
+    padding: 0;
   }
 
-  &:first-child {
-    padding-left: 0;
-  }
+  // &:first-child {
+  //   padding-left: 0;
+  // }
 
   &:last-child {
     padding-right: 0;
   }
 
   &-txt {
-    @include phones {
+    @include phone {
       text-align: left;
       max-width: rem(290px);
+      margin-top: -15px;
     }
   }
 
@@ -62,7 +66,7 @@
   }
 
   .why__img-box {
-    @include phones {
+    @include phone {
       margin-right: rem(12px);
     }
   }
@@ -90,11 +94,11 @@
 }
 
 .why__content {
-  @include phones {
-    margin-bottom: rem(65px);
+  @include phone {
+    // margin-bottom: rem(65px);
   }
   @include tablets {
-    margin-bottom: rem(65px);
+    // margin-bottom: rem(65px);
   }
 }
 
@@ -121,7 +125,7 @@
 .why__title {
   color: #292929;
   margin-bottom: rem(20px);
-  @include phones {
+  @include phone {
     max-width: rem(410px);
     margin-top: rem(50px);
   }
@@ -137,7 +141,7 @@
   line-height: 21px;
   font-weight: 400;
   color: #666;
-  @include phones {
+  @include phone {
     font-size: 18px;
     line-height: 22px;
   }
@@ -148,7 +152,7 @@
   font-size: rem(27px);
   line-height: rem(32px);
 
-  @include phones {
+  @include phone {
     margin-bottom: 0.25rem;
   }
 }

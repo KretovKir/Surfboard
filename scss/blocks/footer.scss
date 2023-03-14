@@ -13,16 +13,30 @@
     padding-bottom: rem(17px);
     
     padding-right: rem(20px);
+    @include phone{
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .footer__text{
     font-size: rem(21px);
     line-height: rem(24px);
+
+    @include phone{
+        margin-bottom:rem(12px);
+    }
 }
 
 .footer__telephone{
     font-size: rem(21px);
     line-height: rem(21px);
+}
+
+.footer__address{
+    @include phone{
+        margin-bottom: rem(19px);
+    }
 }
 
 .social__list{
