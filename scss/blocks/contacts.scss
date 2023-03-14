@@ -5,9 +5,19 @@
         display: none;
     }
 }
+
+.contacts__phone-box{
+    width: rem(13px);
+    height: rem(14px);
+    margin-right: rem(5px);
+}
+.phone{
+    width: 100%;
+    height: 100%;
+}
 .contacts__phone{
-    font-size: 22px;
-    line-height: 18px;
+    font-size: rem(22px);
+    line-height: rem(18px);
     font-weight: 700;
     color: white;
 
@@ -16,10 +26,4 @@
             display: none;
         }
     }
-}
-
-.contacts__icon{
-    width: 13px;
-    height: 14px;
-    margin-right: 5px;
 }

@@ -7,7 +7,7 @@
     color: white;
 
     @include tablets{
-        background: url('../img/background-main.png') center top 100px / cover no-repeat #1968B1;
+        background: url('../img/background-main.png') center top 91px / cover no-repeat #1968B1;
         padding-bottom: 64px;
         align-items: stretch;
         color: white;
@@ -30,9 +30,12 @@
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 17px;
+    @include tablets{
+        max-width: 665px;
+    }
     @include phones{
-        font-size: 40px;
-        line-height: 36px;
+        font-size: rem(40px);
+        line-height: rem(36px);
     }
 }
 .hero__main,
@@ -45,7 +48,12 @@
         align-items: center;
         text-align: center;
         flex:1;
+        padding-top: rem(71px);
     }
+}
+
+.hero__content{
+    padding-top: rem(142px);
 }
 
 .hero__description{
@@ -64,16 +72,29 @@
 
 .hero__item{
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:not(:last-child){
-        margin-right: 33px;
+        margin-right: rem(33px);
     }
 }
 
 .hero__list-image{
     width: 41px;
     height: 41px;
-    margin-right: 11px;
+    
+}
+
+.hero__img-box{
+    width: rem(35px);
+    height: rem(35px);
+    margin-right: rem(11px);
+}
+
+.board-icon{
+    width: 100%;
+    height: 100%;
 }
 
 .hero__item-text{

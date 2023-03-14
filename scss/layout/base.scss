@@ -39,7 +39,7 @@ h1,h2,h3,h4,p{
 .container{
     width: 940px;
     margin: 0 auto;
-
+    position: relative;
     @include tablets{
         width: 95%;
     }
@@ -52,12 +52,10 @@ h1,h2,h3,h4,p{
     align-items: center;
 
     @include tablets{
-        height: auto;
         min-height: auto;
     }
 
     @include phones{
-        height: auto;
         min-height: auto;
     }
     

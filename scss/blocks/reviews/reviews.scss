@@ -9,7 +9,7 @@
 .reviews__title{
     margin-bottom: 32px;
     @include tablets{
-        margin-top: rem(180px);
+        
     }
 }
 
@@ -22,10 +22,11 @@
     margin-bottom: 15px;
     
     @include tablets{
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: rem(56px) rem(24px) rem(46px);
+        margin-bottom: rem(28px);
     }
 }
 
@@ -45,34 +46,35 @@
 }
 
 .reviews__headtxt{
-    margin-bottom: 15px;
-    font-size: 27px;
+    margin-bottom: rem(15px);
+    font-size: rem(27px);
     font-weight: 700;
-    line-height: 32px;
-    
+    line-height: rem(32px);
 }
 
 .reviews__description{
-    font-size: 18px;
-    line-height: 22px;
+    font-size: rem(18px);
+    line-height: rem(22px);
     color: #666666;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
     @include tablets{
-        max-width: rem(677px);
+        margin-bottom: rem(16px);
     }
 }
 
 .reviews__username{
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 500;
-    line-height: 24px;
+    line-height: rem(24px);
 }
 
 .reviews__image{
     max-width: rem(253px);
     max-height: rem(263px);
     @include tablets{
-        margin-bottom: rem(20px);
+        margin-bottom: rem(32px);
+        max-width: rem(130px);
+        max-height: rem(130px);
     }
 }
 
@@ -81,10 +83,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    @include tablets{
-        max-width: rem(130px);
-        max-height: rem(130px);
-    }
 }
 
 

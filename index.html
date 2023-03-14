@@ -14,36 +14,36 @@
     <title>Surfboard</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="hidden">
-        <div class="hidden__cross">
-          <img src="img/cross.svg" class="cross" alt="close" />
-        </div>
-
-        <ul class="hidden__list">
-          <li class="hidden__item">
-            <a href="#" class="hidden__link">О нас</a>
-          </li>
-          <li class="hidden__item">
-            <a href="#" class="hidden__link">Серфборды</a>
-          </li>
-          <li class="hidden__item">
-            <a href="#" class="hidden__link">Команда</a>
-          </li>
-          <li class="hidden__item">
-            <a href="#" class="hidden__link">Меню</a>
-          </li>
-          <li class="hidden__item">
-            <a href="#" class="hidden__link">Отзывы</a>
-          </li>
-          <li class="hidden__item">
-            <a href="#" class="hidden__link">Как мы работаем</a>
-          </li>
-          <li class="hidden__item">
-            <a href="#" class="hidden__link">Контакты</a>
-          </li>
-        </ul>
+    <div class="hidden">
+      <div class="hidden__cross">
+        <img src="img/cross.svg" class="cross" alt="close" />
       </div>
+
+      <ul class="hidden__list">
+        <li class="hidden__item">
+          <a href="#" class="hidden__link">О нас</a>
+        </li>
+        <li class="hidden__item">
+          <a href="#" class="hidden__link">Серфборды</a>
+        </li>
+        <li class="hidden__item">
+          <a href="#" class="hidden__link">Команда</a>
+        </li>
+        <li class="hidden__item">
+          <a href="#" class="hidden__link">Меню</a>
+        </li>
+        <li class="hidden__item">
+          <a href="#" class="hidden__link">Отзывы</a>
+        </li>
+        <li class="hidden__item">
+          <a href="#" class="hidden__link">Как мы работаем</a>
+        </li>
+        <li class="hidden__item">
+          <a href="#" class="hidden__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="wrapper">
       <section class="hero section hero--section">
         <div class="container hero__container">
           <header class="header">
@@ -65,7 +65,11 @@
                 </ul>
               </nav>
               <div class="contacts">
-                <img src="img/phone.svg" class="contacts__icon" alt="phone" />
+                <div class="contacts__phone-box">
+                  <svg class="phone">
+                    <use xlink:href="img/icons/sprite.svg#phone"></use>
+                  </svg>
+                </div>
                 <span class="contacts__phone contacts__phone--header"
                   >8 800 903 90 90</span
                 >
@@ -90,27 +94,28 @@
 
           <ul class="hero__list">
             <li class="hero__item">
-              <img
-                src="img/board-icon.png"
-                class="hero__list-image"
-                alt="board"
-              />
+              <div class="hero__img-box">
+                <svg class="board-icon">
+                  <use xlink:href="img/icons/sprite.svg#board-icon"></use>
+                </svg>
+              </div>
+              
               <span class="hero__item-text">Уникальный дизайн</span>
             </li>
             <li class="hero__item">
-              <img
-                src="img/materials-icon.png"
-                class="hero__list-image"
-                alt="board"
-              />
+              <div class="hero__img-box">
+                <svg class="board-icon">
+                  <use xlink:href="img/icons/sprite.svg#material-icon"></use>
+                </svg>
+              </div>
               <span class="hero__item-text">Прочные материалы</span>
             </li>
             <li class="hero__item">
-              <img
-                src="img/delivery-icon.png"
-                class="hero__list-image"
-                alt="delivery"
-              />
+              <div class="hero__img-box">
+                <svg class="board-icon">
+                  <use xlink:href="img/icons/sprite.svg#delivery-icon"></use>
+                </svg>
+              </div>
               <span class="hero__item-text">Быстрая доставка</span>
             </li>
           </ul>
@@ -130,7 +135,11 @@
             <ul class="why__cards">
               <li class="why__card">
                 <div class="why__img-box">
-                  <img src="img/perfect.svg" class="why__image" alt="circle" />
+                  <div class="why__icon">
+                    <svg class="perfect-icon">
+                      <use xlink:href="img/icons/sprite.svg#perfect"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="why__card-txt">
                   <h3 class="why__card-title">Perfect Fit</h3>
@@ -141,9 +150,14 @@
                 </div>
               </li>
               <li class="why__card">
-                <div class="why__img-box">
-                  <img src="img/strong.svg" class="why__image" alt="circle" />
-                </div>
+                <li class="why__card">
+                  <div class="why__img-box">
+                    <div class="why__icon">
+                      <svg class="strong-icon">
+                        <use xlink:href="img/icons/sprite.svg#strong"></use>
+                      </svg>
+                    </div>
+                  </div>
                 <div class="why__card-txt">
                   <h3 class="why__card-title">Strong</h3>
                   <p class="why__card-text">
@@ -154,7 +168,11 @@
               </li>
               <li class="why__card">
                 <div class="why__img-box">
-                  <img src="img/unique.svg" class="why__image" alt="circle" />
+                  <div class="why__icon">
+                    <svg class="unique-icon">
+                      <use xlink:href="img/icons/sprite.svg#unique"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="why__card-txt">
                   <h3 class="why__card-title">Unique</h3>
@@ -172,18 +190,22 @@
       <section class="products section">
         <div class="container">
           <div class="products__carousel">
-            <div class="products__left">
-              <img src="img/left_arrow.svg" class="carousel__left" alt="left" />
-            </div>
+            <button class="products__control products__control--left">
+              <img src="img/left_arrow.svg" class="products__control-icon" alt="left" />
+            </button>
             <div class="products__items">
               <div class="products__item">
-                <div class="products__item-img">
-                  <img
-                    src="img/board1.svg"
-                    class="products__image"
-                    alt="board"
-                  />
+                <div class="products__item-images">
+                  <div class="products__blub"><img src="img/blub.png" class="products__blub-item" alt="blub"></div>
+                  <div class="products__item-img">
+                    <img
+                      src="img/board1.svg"
+                      class="products__image"
+                      alt="board"
+                    />
+                  </div>
                 </div>
+               
                 <div class="products__item-txt">
                   <div class="products__dropdown">
                     <img
@@ -261,13 +283,13 @@
                 </div>
               </div>
             </div>
-            <div class="products__right">
+            <button class="products__control products__control--right">
               <img
                 src="img/right_arrow.svg"
-                class="carousel__right"
+                class="products__control-icon"
                 alt="right"
               />
-            </div>
+            </button>
           </div>
         </div>
       </section>
