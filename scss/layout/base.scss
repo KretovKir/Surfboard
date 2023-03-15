@@ -83,7 +83,7 @@ h1,h2,h3,h4,p{
     display: block;
     background: #FEDB3F;
     color: black;
-    padding: 21px 41px;
+    padding: rem(21px) rem(41px);
     font-family: 'Alegreya Sans', sans-serif;
     line-height: 18px;
     font-weight: 800;
@@ -104,6 +104,7 @@ h1,h2,h3,h4,p{
         background: black;
         color: #FFD517;
     }
+
 }
 
 .btn--theme--transparent{
