@@ -4,6 +4,7 @@ var closeCross = document.querySelector(".cross");
 
 burger.addEventListener("click", function (event) {
   hidden.style.display = "block";
+  hidden.style.zIndex = "1";
 });
 
 closeCross.addEventListener("click", function (event) {

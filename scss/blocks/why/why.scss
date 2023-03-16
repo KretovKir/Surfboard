@@ -31,8 +31,9 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin-bottom: rem(39px);
+    margin-bottom: rem(35px);
     padding: 0;
+    align-items: flex-start;
   }
 
   // &:first-child {
@@ -47,7 +48,7 @@
     @include phone {
       text-align: left;
       max-width: rem(290px);
-      margin-top: -15px;
+      padding-top: rem(10px);
     }
   }
 
@@ -108,6 +109,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include phone{
+    margin-bottom: rem(55px);
+  }
 }
 
 .why__img-box {
@@ -120,17 +125,21 @@
   justify-content: center;
   align-items: center;
   margin-bottom: rem(20px);
+
+  @include phone{
+    margin-bottom: 0;
+  }
 }
 
 .why__title {
   color: #292929;
   margin-bottom: rem(20px);
-  @include phone {
-    max-width: rem(410px);
-    margin-top: rem(50px);
-  }
+  
   @include tablets {
-    margin-top: rem(53px);
+  }
+
+  @include phone {
+    margin-bottom: 9px ;
   }
 }
 
@@ -142,8 +151,8 @@
   font-weight: 400;
   color: #666;
   @include phone {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: rem(18px);
+    line-height: rem(22px);
   }
 }
 
@@ -153,7 +162,7 @@
   line-height: rem(32px);
 
   @include phone {
-    margin-bottom: 0.25rem;
+    margin-bottom: rem(10px) ;
   }
 }
 

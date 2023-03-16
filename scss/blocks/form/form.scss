@@ -109,21 +109,25 @@
     @include tablets{
         margin-bottom: rem(29px);
     }
+
+    @include phone{
+        margin-bottom: rem(22px);
+    }
 }
 
 
 
 .form__title{
     color:white;
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 2px;
+    font-size: rem(18px);
+    line-height: rem(22px);
+    margin-bottom: rem(2px);
     text-align: left;
 }
 
 .radio{
     display: flex;
-    margin-right: 18px;
+    margin-right: rem(18px);
     margin-top: 0;
     &:last-child{
         margin-right:0;
@@ -131,10 +135,10 @@
 }
 
 .radio__title{
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 200;
-    line-height: 22px;
-    letter-spacing: 0px;
+    line-height: rem(22px);
+    letter-spacing: rem(0px);
     text-align: left;
 
 }
@@ -142,14 +146,19 @@
 .form__controls{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 
     &--point{
-        margin-bottom: 45px;
+        margin-bottom: rem(45px);
+
+        @include phone{
+            margin-bottom: rem(37px);
+        }
     }
 
     @include phone{
         justify-content: center;
+        margin-bottom: rem(25px);
     }
 }
 
@@ -157,17 +166,17 @@
 
 
 .radio__visible{
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     position: relative;
     border-radius: 50%;
     background-color: white;
-    margin-right: 10px;
+    margin-right: rem(10px);
 
     &:before{
         content:"";
-        width: 14px;
-        height: 14px;
+        width: rem(14px);
+        height: rem(14px);
         border-radius: 50%;
         background: #FEDB3F;
         position: absolute;
@@ -186,8 +195,8 @@
         position: relative;
         
         &::before{
-            width: 14px;
-            height: 8px;
+            width: rem(14px);
+            height: rem(8px);
             background-color: transparent;
             border-radius: 0;
             border-left: 2px solid #FEDB3F;

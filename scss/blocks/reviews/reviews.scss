@@ -1,8 +1,5 @@
 .reviews{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
     text-align: center;
 }
 
@@ -30,6 +27,10 @@
         align-items: center;
         padding: rem(56px) rem(24px) rem(46px);
         margin-bottom: rem(28px);
+    }
+
+    @include phone{
+        padding: rem(56px) rem(24px) rem(31px);
     }
 }
 
@@ -78,6 +79,7 @@
         margin-bottom: rem(32px);
         max-width: rem(130px);
         max-height: rem(130px);
+        overflow: hidden;
     }
 }
 
@@ -107,22 +109,35 @@
     }
 }
 
+.reviews__user{
+    height: rem(75px);
+    width: rem(75px);
+    text-align: center; 
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+
+    &:hover{
+        border: 6px solid #FEDB3F;
+        border-radius: 100px;
+    }
+
+    @include phone{
+        height: rem(64px);
+        width: rem(64px);
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
 @each $user in (girl, man, girl2){
     .reviews__user--#{$user}{
         background: url(../img/#{$user}.png) center/ cover no-repeat;
-        height: 75px;
-        width: 75px;
-        text-align: center; 
-        margin-right: 7px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        border-radius: 50%;
-
-        &:hover{
-            border: 6px solid #FEDB3F;
-            border-radius: 100px;
-        }
+       
     }
     
     
@@ -130,7 +145,6 @@
 
 
 .review__userlist{
-    height: 75px;
     display: flex;
     text-align: center;
     justify-content: center;
