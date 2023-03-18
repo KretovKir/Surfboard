@@ -12,9 +12,19 @@
     }
 }
 
+.reviews__cards{
+    min-height:rem(348px);
+}
 
 
 .reviews__content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    top:0;
+    opacity: 0;
+    
     background-color:#F8FAF9;
     display: flex;
     padding: 42px;
@@ -32,6 +42,12 @@
     @include phone{
         padding: rem(56px) rem(24px) rem(31px);
     }
+}
+
+.active{
+    position: static;
+    opacity:1;
+    transition: .3s;
 }
 
 .reviews__text{
@@ -91,17 +107,17 @@
 }
 
 
-.review__user{
-    width:75px;
-    height: 75px;
-    background-size: cover;
+// .review__user{
+//     width:rem(75px);
+//     height: rem(75px);
+//     background-size: cover;
 
-    &--active{
-        border: 6px solid #FEDB3F;
-        border-radius: 100px;
-    }
+//     &--{
+//         border: 6px solid #FEDB3F;
+//         border-radius: 100px;
+//     }
     
-}
+// }
 
 .reviews__users{
     @include tablets{
@@ -113,7 +129,7 @@
     height: rem(75px);
     width: rem(75px);
     text-align: center; 
-    margin-right: 7px;
+    margin-right: rem(7px);
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -122,6 +138,10 @@
     &:hover{
         border: 6px solid #FEDB3F;
         border-radius: 100px;
+    }
+
+    &--active{
+        border: 6px solid #FEDB3F;
     }
 
     @include phone{
@@ -134,13 +154,19 @@
     }
 }
 
-@each $user in (girl, man, girl2){
-    .reviews__user--#{$user}{
-        background: url(../img/#{$user}.png) center/ cover no-repeat;
-       
-    }
-    
-    
+.reviews__user--girl{
+    background: url(/img/girl.png) center/ cover no-repeat;
+
+}
+
+
+.reviews__user--man{
+    background: url(/img/man.png) center/ cover no-repeat;
+}
+
+
+.reviews__user--girl2{
+    background: url(/img/girl2.png) center/ cover no-repeat;
 }
 
 
@@ -148,9 +174,8 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-bottom: 65px;
+    margin-bottom: rem(65px);
     
 }
-
 
 

@@ -99,7 +99,7 @@
                   <use xlink:href="img/icons/sprite.svg#board-icon"></use>
                 </svg>
               </div>
-              
+
               <span class="hero__item-text">Уникальный дизайн</span>
             </li>
             <li class="hero__item">
@@ -149,14 +149,14 @@
                   </p>
                 </div>
               </li>
-                <li class="why__card">
-                  <div class="why__img-box">
-                    <div class="why__icon">
-                      <svg class="strong-icon">
-                        <use xlink:href="img/icons/sprite.svg#strong"></use>
-                      </svg>
-                    </div>
+              <li class="why__card">
+                <div class="why__img-box">
+                  <div class="why__icon">
+                    <svg class="strong-icon">
+                      <use xlink:href="img/icons/sprite.svg#strong"></use>
+                    </svg>
                   </div>
+                </div>
                 <div class="why__card-txt">
                   <h3 class="why__card-title">Strong</h3>
                   <p class="why__card-text">
@@ -190,21 +190,22 @@
         <div class="container">
           <div class="products__carousel">
             <button class="products__control products__control--left">
-              <img src="img/left_arrow.svg" class="products__control-icon" alt="left" />
+              <img
+                src="img/left_arrow.svg"
+                class="products__control-icon"
+                alt="left"
+              />
             </button>
             <div class="products__items">
               <div class="products__item">
-               
-                  
-                  <div class="products__item-img">
-                    <img
-                      src="img/board1.svg"
-                      class="products__image"
-                      alt="board"
-                    />
-                  </div>
-                
-               
+                <div class="products__item-img">
+                  <img
+                    src="img/board1.svg"
+                    class="products__image"
+                    alt="board"
+                  />
+                </div>
+
                 <div class="products__item-txt">
                   <div class="products__dropdown">
                     <img
@@ -296,30 +297,70 @@
       <section class="reviews section">
         <div class="container reviews--container">
           <h2 class="reviews__title section__title">ОТЗЫВЫ</h2>
-          <div class="reviews__content">
-            <div class="reviews__image">
-              <img src="img/girl.png" class="review__image-item" alt="girl" />
-            </div>
-            <div class="reviews__text">
-              <h3 class="reviews__headtxt">Лучший дизайн</h3>
-              <p class="reviews__description">
-                Я увидела доски на сайте и влюбилась в их дизайн. К летнему
-                сезону я заказала себе доску в SurfBoard. Дизайнер команды -
-                волшебница! Она учла все мои предпочтения и комментарии. В итоге
-                получился прекрасный дизайн. А я катаюсь на доске, которая мне
-                нравится)
-              </p>
-              <p class="reviews__username">Ольга Макарова</p>
-            </div>
-          </div>
+
+          <ul class="reviews__cards">
+            <li class="reviews__content">
+              <div class="reviews__image">
+                <img src="img/girl.png" class="review__image-item" alt="girl" />
+              </div>
+              <div class="reviews__text">
+                <h3 class="reviews__headtxt">Лучший дизайн</h3>
+                <p class="reviews__description">
+                  Я увидела доски на сайте и влюбилась в их дизайн. К летнему
+                  сезону я заказала себе доску в SurfBoard. Дизайнер команды -
+                  волшебница! Она учла все мои предпочтения и комментарии. В
+                  итоге получился прекрасный дизайн. А я катаюсь на доске,
+                  которая мне нравится)
+                </p>
+                <p class="reviews__username">Ольга Макарова</p>
+              </div>
+            </li>
+            <li class="reviews__content">
+              <div class="reviews__image">
+                <img
+                  src="img/man-square.png"
+                  class="review__image-item"
+                  alt="man"
+                />
+              </div>
+              <div class="reviews__text">
+                <h3 class="reviews__headtxt">Нереальная скорость</h3>
+                <p class="reviews__description">
+                  Я занимаюсь профессиональным спортом. Доверил изготовление
+                  доски для соревнований ребятам из Surfboard и не пожалел: 1
+                  место на соревнованиях. Нереальная скорость, устойчивая,
+                  удобная и легкая: всё что нужно для победы на соревнованиях!
+                </p>
+                <p class="reviews__username">Марк Брюлов</p>
+              </div>
+            </li>
+            <li class="reviews__content active">
+              <div class="reviews__image">
+                <img
+                  src="img/man2-square.png"
+                  class="review__image-item"
+                  alt="girl"
+                />
+              </div>
+              <div class="reviews__text">
+                <h3 class="reviews__headtxt">Устойчивость и безопасность</h3>
+                <p class="reviews__description">
+                  Я заказывал доски для своих детей. Мне было важно, чтобы они
+                  были устойчивые, так как безопасность детей на первом месте.
+                  Доски были изготовлены по индивидуальным замерам с учетом
+                  роста и веса каждого ребенка. Теперь дети катаются и им
+                  нравится!
+                </p>
+                <p class="reviews__username">Василий Поперечный</p>
+              </div>
+            </li>
+          </ul>
 
           <div class="reviews__users">
             <ul class="review__userlist">
-              <li
-                class="reviews__user review__user--active reviews__user--girl"
-              ></li>
-              <li class="reviews__user reviews__user--man"></li>
-              <li class="reviews__user reviews__user--girl2"></li>
+              <li class="reviews__user reviews__user--girl "><a class="reviews__switcher-link"></a></li>
+              <li class="reviews__user reviews__user--man reviews__user--active"><a class="reviews__switcher-link"></a></li>
+              <li class="reviews__user reviews__user--girl2"><a class="reviews__switcher-link"></a></li>
             </ul>
           </div>
         </div>
@@ -468,5 +509,7 @@
       </section>
     </div>
   </body>
+  <script src="js/jquery.js"></script>
   <script src="js/burger.js"></script>
+  <script src="js/reviews.js"></script>
 </html>

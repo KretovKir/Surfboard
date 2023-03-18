@@ -524,9 +524,6 @@ h1, h2, h3, h4, p {
   border-radius: 4px;
 }
 
-.header {
-  padding: 0 0.8125rem;
-}
 @media (max-width: 480px) {
   .header {
     padding: 0;
@@ -619,6 +616,9 @@ h1, h2, h3, h4, p {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+}
+.why__card:first-child {
+  padding-left: 0;
 }
 .why__card:last-child {
   padding-right: 0;
@@ -772,7 +772,17 @@ h1, h2, h3, h4, p {
   }
 }
 
+.reviews__cards {
+  min-height: 21.75rem;
+}
+
 .reviews__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
   background-color: #F8FAF9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,6 +811,13 @@ h1, h2, h3, h4, p {
   .reviews__content {
     padding: 3.5rem 1.5rem 1.9375rem;
   }
+}
+
+.active {
+  position: static;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .reviews__text {
@@ -864,16 +881,6 @@ h1, h2, h3, h4, p {
      object-fit: cover;
 }
 
-.review__user {
-  width: 75px;
-  height: 75px;
-  background-size: cover;
-}
-.review__user--active {
-  border: 6px solid #FEDB3F;
-  border-radius: 100px;
-}
-
 @media (max-width: 1023px) {
   .reviews__users {
     margin-bottom: 11.25rem;
@@ -884,7 +891,7 @@ h1, h2, h3, h4, p {
   height: 4.6875rem;
   width: 4.6875rem;
   text-align: center;
-  margin-right: 7px;
+  margin-right: 0.4375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,6 +905,9 @@ h1, h2, h3, h4, p {
   border: 6px solid #FEDB3F;
   border-radius: 100px;
 }
+.reviews__user--active {
+  border: 6px solid #FEDB3F;
+}
 @media (max-width: 480px) {
   .reviews__user {
     height: 4rem;
@@ -909,15 +919,15 @@ h1, h2, h3, h4, p {
 }
 
 .reviews__user--girl {
-  background: url(../img/girl.png) center/cover no-repeat;
+  background: url(/img/girl.png) center/cover no-repeat;
 }
 
 .reviews__user--man {
-  background: url(../img/man.png) center/cover no-repeat;
+  background: url(/img/man.png) center/cover no-repeat;
 }
 
 .reviews__user--girl2 {
-  background: url(../img/girl2.png) center/cover no-repeat;
+  background: url(/img/girl2.png) center/cover no-repeat;
 }
 
 .review__userlist {
@@ -928,7 +938,7 @@ h1, h2, h3, h4, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 65px;
+  margin-bottom: 4.0625rem;
 }
 
 .order {
@@ -1328,6 +1338,7 @@ h1, h2, h3, h4, p {
 .hero__title {
   max-width: 30.9375rem;
   font-size: 3rem;
+  line-height: 58px;
   font-weight: 700;
   margin-bottom: 1.0625rem;
 }

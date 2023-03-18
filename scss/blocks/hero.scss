@@ -27,6 +27,7 @@
 .hero__title {
   max-width: rem(495px);
   font-size: rem(48px);
+  line-height: 58px;
   font-weight: 700;
   margin-bottom: rem(17px);
   @include tablets {
