@@ -1898,10 +1898,15 @@ h1, h2, h3, h4, p {
 }
 
 .team__item {
-  max-width: 13.8125rem;
+  width: 13.8125rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.team__img {
+  width: 13.75rem;
+  height: 18.125rem;
 }
 
 .team__item-title {
@@ -1917,6 +1922,10 @@ h1, h2, h3, h4, p {
 }
 
 .team__item-drop {
-  height: 0px;
+  display: none;
+}
+
+.team__member {
+  margin-bottom: 1.3125rem;
 }
 /*# sourceMappingURL=main.css.map */
