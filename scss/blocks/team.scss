@@ -22,6 +22,7 @@
   display: flex;
   border: none;
   background: transparent;
+  margin-bottom: rem(8px);
 }
 
 .team__item-content {
@@ -34,4 +35,8 @@
 
 .team__member{
     margin-bottom: rem(21px);
+}
+
+.team__item-job{
+    margin-bottom: rem(5px);
 }

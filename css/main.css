@@ -1915,6 +1915,7 @@ h1, h2, h3, h4, p {
   display: flex;
   border: none;
   background: transparent;
+  margin-bottom: 0.5rem;
 }
 
 .team__item-content {
@@ -1927,5 +1928,9 @@ h1, h2, h3, h4, p {
 
 .team__member {
   margin-bottom: 1.3125rem;
+}
+
+.team__item-job {
+  margin-bottom: 0.3125rem;
 }
 /*# sourceMappingURL=main.css.map */
