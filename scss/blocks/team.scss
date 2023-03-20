@@ -1,0 +1,28 @@
+.team{
+    display: flex;
+    flex-direction: column;
+    
+}
+.team__items{
+    display:flex;
+    justify-content: space-between;
+}
+
+.team__item{
+    max-width: rem(221px);
+    align-items: center;
+}
+
+.team__item-title{
+    display: flex;
+    border: none;
+    background: transparent;
+}
+
+.team__item-content{
+    text-align: center;
+}
+
+.team__item-drop{
+    height: 0px;
+}

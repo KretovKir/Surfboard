@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Surfboard</title>
   </head>
@@ -196,8 +200,8 @@
                 alt="left"
               />
             </button>
-            <div class="products__items">
-              <div class="products__item">
+            <ul class="products__items">
+              <li class="products__item">
                 <div class="products__item-img">
                   <img
                     src="img/board1.svg"
@@ -281,8 +285,94 @@
                     <button class="btn btn--theme--orange">ЗАКАЗАТЬ</button>
                   </div>
                 </div>
-              </div>
-            </div>
+              </li>
+              <li class="products__item">
+                <div class="products__item-img">
+                  <img
+                    src="img/board2.svg"
+                    class="products__image"
+                    alt="board"
+                  />
+                </div>
+
+                <div class="products__item-txt">
+                  <div class="products__dropdown">
+                    <img
+                      src="img/parametres.svg"
+                      class="products__dropdown-icon"
+                      alt="parametres"
+                    />
+
+                    <div class="dropdown">
+                      <ul class="dropdown__list">
+                        <li class="dropdown__row">
+                          <svg class="dropdown__icon">
+                            <use xlink:href="img/icons/sprite.svg#height"></use>
+                          </svg>
+                          <div class="dropdown__text">Длина доски</div>
+                          <div class="dropdown__values">от 1.5м.</div>
+                        </li>
+                        <li class="dropdown__row">
+                          <svg class="dropdown__icon">
+                            <use xlink:href="img/icons/sprite.svg#width"></use>
+                          </svg>
+                          <div class="dropdown__text">Ширина доски</div>
+                          <div class="dropdown__values">от 30 см.</div>
+                        </li>
+                        <li class="dropdown__row">
+                          <svg class="dropdown__icon">
+                            <use
+                              xlink:href="img/icons/sprite.svg#superburger"
+                            ></use>
+                          </svg>
+                          <div class="dropdown__text">Толщина</div>
+                          <div class="dropdown__values">8 см.</div>
+                        </li>
+                        <li class="dropdown__row">
+                          <svg class="dropdown__icon">
+                            <use xlink:href="img/icons/sprite.svg#time"></use>
+                          </svg>
+                          <div class="dropdown__text">Срок службы</div>
+                          <div class="dropdown__values">5 лет.</div>
+                        </li>
+                        <li class="dropdown__row">
+                          <svg class="dropdown__icon">
+                            <use xlink:href="img/icons/sprite.svg#weight"></use>
+                          </svg>
+                          <div class="dropdown__text">Вес</div>
+                          <div class="dropdown__values">7-8 кг.</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <h2 class="products__title">Шортборд</h2>
+                  <p class="products__description">
+                    Самые быстрые доски для профессионалов. Размеры шортбордов
+                    позволяют быстро набирать скорость, делать различные трюки
+                    на волне, включая резкие повороты и развороты, флоатеры
+                    (проезды по самому гребню волны), различные прыжки с
+                    вращениями или без, а также катание в трубах.
+                  </p>
+                  <ul class="products__parametres">
+                    <li class="products__parametres-height">
+                      <p class="products__parametres-title">Длина доски</p>
+                      <p class="products__parametres-values">от 1.5 метров</p>
+                    </li>
+                    <li class="products__parametres-width">
+                      <p class="products__parametres-title">Ширина доски</p>
+                      <p class="products__parametres-values">
+                        от 30 сантиметров
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="products__item-price">
+                    <p class="products__price">12000 ₽</p>
+                    <button class="btn btn--theme--orange">ЗАКАЗАТЬ</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
             <button class="products__control products__control--right">
               <img
                 src="img/right_arrow.svg"
@@ -291,6 +381,68 @@
               />
             </button>
           </div>
+        </div>
+      </section>
+
+      <section class="team section team--desktop">
+        <div class="container">
+          <h2 class="team__title section__title">Команда</h2>
+          <ul class="team__items">
+            <li class="team__item">
+              <div class="team__member">
+                <img src="img/human1.svg" alt="Борис Федорович" />
+              </div>
+              <button class="team__item-title">Борис Федорович</button>
+              <div class="team__item-drop">
+                <div class="team__item-content">
+                  <div class="team__item-job">Главный технолог</div>
+                  <p class="team__job-desc">
+                    Отвечает за материалы и разработку досок
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__member">
+                <img src="img/human2.svg" alt="Борис Федорович" />
+              </div>
+              <button class="team__item-title">Ольга Невзорова</button>
+              <div class="team__item-drop">
+                <div class="team__item-content">
+                  <div class="team__item-job">Дизайнер</div>
+                  <p class="team__job-desc">Создаёт дизайн сёрфбордов</p>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__member">
+                <img src="img/human3.svg" alt="Борис Федорович" />
+              </div>
+              <button class="team__item-title">Ингвар Нильсон</button>
+              <div class="team__item-drop">
+                <div class="team__item-content">
+                  <div class="team__item-job">Спортсмен</div>
+                  <p class="team__job-desc">
+                    Участвует в разработке сёрфбордов
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__member">
+                <img src="img/human4.svg" alt="Борис Федорович" />
+              </div>
+              <button class="team__item-title">Екатерина Иванова</button>
+              <div class="team__item-drop">
+                <div class="team__item-content">
+                  <div class="team__item-job">Тестировщик</div>
+                  <p class="team__job-desc">
+                    Отвечает за разработку новых продуктов
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -358,9 +510,17 @@
 
           <div class="reviews__users">
             <ul class="review__userlist">
-              <li class="reviews__user reviews__user--girl "><a class="reviews__switcher-link"></a></li>
-              <li class="reviews__user reviews__user--man reviews__user--active"><a class="reviews__switcher-link"></a></li>
-              <li class="reviews__user reviews__user--girl2"><a class="reviews__switcher-link"></a></li>
+              <li class="reviews__user reviews__user--girl">
+                <a class="reviews__switcher-link"></a>
+              </li>
+              <li
+                class="reviews__user reviews__user--man reviews__user--active"
+              >
+                <a class="reviews__switcher-link"></a>
+              </li>
+              <li class="reviews__user reviews__user--girl2">
+                <a class="reviews__switcher-link"></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -512,4 +672,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/burger.js"></script>
   <script src="js/reviews.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="js/slider.js"></script>
 </html>

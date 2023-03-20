@@ -70,6 +70,7 @@ h1,h2,h3,h4,p{
     font-weight: 700;
     text-transform: uppercase;
     color: #292929;
+    
     @include phone{
         font-size: rem(40px);
         line-height: rem(36px);
