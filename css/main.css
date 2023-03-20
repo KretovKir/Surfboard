@@ -1482,6 +1482,7 @@ h1, h2, h3, h4, p {
   background: transparent;
   border: transparent;
   top: 36%;
+  z-index: 1;
 }
 .products__control--left {
   left: -1.0625rem;
@@ -1886,6 +1887,13 @@ h1, h2, h3, h4, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .team__items {
@@ -1902,6 +1910,7 @@ h1, h2, h3, h4, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .team__img {
@@ -1910,12 +1919,21 @@ h1, h2, h3, h4, p {
 }
 
 .team__item-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   border: none;
   background: transparent;
   margin-bottom: 0.5rem;
+  font-size: 1.3125rem;
+  line-height: 1.5625rem;
+}
+.team__item-title::after {
+  margin-top: 0.5625rem;
+  margin-left: 0.3125rem;
+  content: "";
+  border: 0.5625rem solid;
+  border-color: black transparent transparent transparent;
 }
 
 .team__item-content {
@@ -1923,7 +1941,10 @@ h1, h2, h3, h4, p {
 }
 
 .team__item-drop {
-  display: none;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
 }
 
 .team__member {
@@ -1932,5 +1953,13 @@ h1, h2, h3, h4, p {
 
 .team__item-job {
   margin-bottom: 0.3125rem;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.team__job-desc {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #666666;
 }
 /*# sourceMappingURL=main.css.map */
