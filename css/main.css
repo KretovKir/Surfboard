@@ -1896,6 +1896,10 @@ h1, h2, h3, h4, p {
   text-align: center;
 }
 
+.team__title {
+  margin-bottom: 3.3125rem;
+}
+
 .team__items {
   display: -webkit-box;
   display: -ms-flexbox;
