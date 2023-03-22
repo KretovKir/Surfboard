@@ -120,6 +120,7 @@
 // }
 
 .reviews__users{
+   
     @include tablets{
         margin-bottom: rem(180px);
     }
@@ -175,7 +176,7 @@
     text-align: center;
     justify-content: center;
     margin-bottom: rem(65px);
-    
+    z-index: 10;
 }
 
 

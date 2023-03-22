@@ -1,5 +1,4 @@
-$('.reviews__switcher-item').on('click', function(event){
-    event.preventDefault();
-    const $this = $(event.currentTarget);
-    console.log($this)
+$('.reviews__user--girl').on('click', e =>{
+    e.preventDefault();
+    console.log('Hello')
 })
