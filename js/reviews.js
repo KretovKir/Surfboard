@@ -5,7 +5,6 @@ const findBlock = (alias)=>{
 }
 
 
-//я не понял к чему нужно было использовать reviews__switcher-link, если можно навесит
 $('.reviews__user').on('click', (event)=>{
     let $this = $(event.currentTarget);
     let target = $this.attr('data-open');
