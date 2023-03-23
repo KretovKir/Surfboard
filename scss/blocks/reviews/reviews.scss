@@ -13,23 +13,18 @@
 }
 
 .reviews__cards{
-    min-height:rem(348px);
+    margin-bottom: rem(15px);
+    position:relative
 }
 
 
 .reviews__content{
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom:0;
-    top:0;
+    left: -9999px;
     opacity: 0;
-    
-    background-color:#F8FAF9;
+    background-color: #F8FAF9;
     display: flex;
     padding: 42px;
-    margin-bottom: 15px;
-    margin-top: rem(26px);
     
     @include tablets{
         flex-direction: column;
@@ -141,9 +136,6 @@
         border-radius: 100px;
     }
 
-    &--active{
-        border: 6px solid #FEDB3F;
-    }
 
     @include phone{
         height: rem(64px);
@@ -153,6 +145,11 @@
     &:last-child{
         margin-right: 0;
     }
+}
+
+
+.user-active{
+    border: 6px solid #FEDB3F;
 }
 
 .reviews__user--girl{

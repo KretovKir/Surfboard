@@ -451,7 +451,7 @@
           <h2 class="reviews__title section__title">ОТЗЫВЫ</h2>
 
           <ul class="reviews__cards">
-            <li class="reviews__content">
+            <li class="reviews__content" data-open-with="one">
               <div class="reviews__image">
                 <img src="img/girl.png" class="review__image-item" alt="girl" />
               </div>
@@ -467,7 +467,7 @@
                 <p class="reviews__username">Ольга Макарова</p>
               </div>
             </li>
-            <li class="reviews__content">
+            <li class="reviews__content" data-open-with="two">
               <div class="reviews__image">
                 <img
                   src="img/man-square.png"
@@ -486,7 +486,7 @@
                 <p class="reviews__username">Марк Брюлов</p>
               </div>
             </li>
-            <li class="reviews__content active">
+            <li class="reviews__content active" data-open-with="three">
               <div class="reviews__image">
                 <img
                   src="img/man2-square.png"
@@ -508,18 +508,18 @@
             </li>
           </ul>
 
-          <div class="revies__usersw">
+          <div class="reviews__users">
             <ul class="review__userlist">
               <li class="reviews__user reviews__user--girl">
-                <a class="reviews__switcher-link"></a>
+                <a class="reviews__switcher-link" data-open="one"></a>
               </li>
               <li
-                class="reviews__user reviews__user--man reviews__user--active"
+                class="reviews__user reviews__user--man user-active"
               >
-                <a class="reviews__switcher-link"></a>
+                <a class="reviews__switcher-link" data-open="two"></a>
               </li>
               <li class="reviews__user reviews__user--girl2">
-                <a class="reviews__switcher-link"></a>
+                <a class="reviews__switcher-link"data-open="three"></a>
               </li>
             </ul>
           </div>

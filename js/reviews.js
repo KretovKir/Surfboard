@@ -1,4 +1,6 @@
-$('.reviews__user--girl').on('click', e =>{
+$('.reviews__user').on('click', e =>{
     e.preventDefault();
-    console.log('Hello')
+    let currentTarget = e.currentTarget;
+    $(currentTarget).addClass('user-active').siblings().removeClass('user-active');
 })
+

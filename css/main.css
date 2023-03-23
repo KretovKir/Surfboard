@@ -773,23 +773,19 @@ h1, h2, h3, h4, p {
 }
 
 .reviews__cards {
-  min-height: 21.75rem;
+  margin-bottom: 0.9375rem;
+  position: relative;
 }
 
 .reviews__content {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+  left: -9999px;
   opacity: 0;
   background-color: #F8FAF9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 42px;
-  margin-bottom: 15px;
-  margin-top: 1.625rem;
 }
 @media (max-width: 1023px) {
   .reviews__content {
@@ -905,9 +901,6 @@ h1, h2, h3, h4, p {
   border: 6px solid #FEDB3F;
   border-radius: 100px;
 }
-.reviews__user--active {
-  border: 6px solid #FEDB3F;
-}
 @media (max-width: 480px) {
   .reviews__user {
     height: 4rem;
@@ -916,6 +909,10 @@ h1, h2, h3, h4, p {
 }
 .reviews__user:last-child {
   margin-right: 0;
+}
+
+.user-active {
+  border: 6px solid #FEDB3F;
 }
 
 .reviews__user--girl {
