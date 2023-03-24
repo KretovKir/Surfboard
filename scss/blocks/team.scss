@@ -33,6 +33,7 @@
   margin-bottom: rem(8px);
   font-size: rem(21px);
   line-height: rem(25px);
+  cursor: pointer;
 
   &::after{
     margin-top: rem(9px);
@@ -49,11 +50,20 @@
   text-align: center;
 }
 
-.team__item-drop {
-overflow: hidden;
-height: 0;
-transition: height .3s;
+// .team__item-drop {
+// overflow: hidden;
+// height: 0;
+// transition: height .3s;
+// }
+
+.team__item-drop{
+  overflow: hidden;
+  height: 0;
+  transition: height .3s;
 }
+
+
+
 
 .team__member {
   margin-bottom: rem(21px);
