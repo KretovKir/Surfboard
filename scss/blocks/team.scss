@@ -4,7 +4,20 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  @include phone{
+    &--desktop{
+      display: none;
+    }
+    &--mobile{
+      display: flex;
+    }
+  }
+
 }
+
+
+
 
 .team__title{
     margin-bottom: rem(53px);
@@ -13,6 +26,13 @@
 .team__items {
   display: flex;
   justify-content: space-between;
+
+  @include phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .team__item {
@@ -60,6 +80,10 @@
   overflow: hidden;
   height: 0;
   transition: height .3s;
+  
+  @include phone{
+    margin-bottom: rem(20px);
+  }
 }
 
 

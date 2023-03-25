@@ -19,12 +19,11 @@ $('.team__item-title').on('click', (event)=>{
     const $this = $(event.currentTarget);
     const closeSiblings = $this.closest('.team__items');
     const elemContainer = $this.closest('.team__item');
+    
     if(elemContainer.hasClass('isActive')){
         closeAll(closeSiblings);
     }else{
+        closeAll(closeSiblings);
         isOpen($this);
     }
-    
-    closeAll(closeSiblings);
-    isOpen($this);
 })
