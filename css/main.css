@@ -1893,6 +1893,9 @@ h1, h2, h3, h4, p {
           align-items: center;
   text-align: center;
 }
+.team--mobile {
+  display: none;
+}
 @media (max-width: 1023px) {
   .team--desktop {
     display: none;
@@ -2023,5 +2026,54 @@ h1, h2, h3, h4, p {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #666666;
+}
+
+#modal {
+  display: none;
+  max-width: 31.25rem;
+}
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__accord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu__content {
+  max-width: 25.625rem;
+}
+
+.menu__main {
+  position: relative;
+  width: 49.625rem;
+}
+
+.menu__item-title {
+  background: orangered;
+  width: 6.375rem;
+  height: 40.75rem;
+  border: 1px solid black;
+}
+
+.menu__content {
+  display: none;
+}
+
+.isActive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 39.75rem;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 /*# sourceMappingURL=main.css.map */

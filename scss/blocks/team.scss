@@ -5,6 +5,10 @@
   align-items: center;
   text-align: center;
 
+  &--mobile{
+    display: none;
+  }
+
   @include tablets{
     &--desktop{
       display: none;

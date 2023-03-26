@@ -1,0 +1,35 @@
+.menu__item{
+    display: flex;
+
+}
+
+.menu__accord{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__content{
+    max-width: rem(410px);
+}
+
+.menu__main{
+    position: relative;
+    width: rem(794px);
+}
+
+.menu__item-title{
+    background: orangered;
+    width: rem(102px);
+    height: rem(652px);
+    border: 1px solid black;
+}
+
+.menu__content{
+    display: none;
+}
+
+.isActive{
+    display: flex;
+    width: rem(636px);
+    transition: width .3s;
+}
