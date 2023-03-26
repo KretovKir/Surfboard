@@ -5,6 +5,11 @@
   align-items: center;
   text-align: center;
 
+  @include tablets{
+    &--desktop{
+      display: none;
+    }
+  }
   @include phone{
     &--desktop{
       display: none;
@@ -27,6 +32,12 @@
   display: flex;
   justify-content: space-between;
 
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   @include phone{
     display: flex;
     flex-direction: column;
@@ -81,6 +92,9 @@
   height: 0;
   transition: height .3s;
   
+  @include tablets{
+    margin-bottom: rem(20px);
+  }
   @include phone{
     margin-bottom: rem(20px);
   }
