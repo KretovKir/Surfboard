@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   justify-content: space-between;
-  background: url(/img/sea.jpg) center center / cover no-repeat
+  background: url('../img/sea.jpg') center center / cover no-repeat
     rgba(255, 255, 255, 0.1);
 }
 .menu__item {
@@ -42,15 +42,15 @@
 }
 
 .menu__item-title--long {
-  background: url(/img/longslide.png);
+  background: url('../img/longslide.png');
 }
 
 .menu__item-title--short {
-  background: url(/img/slideshort.png);
+  background: url('../img/slideshort.png');
 }
 
 .menu__item-title--soft {
-  background: url(/img/slidesoft.png);
+  background: url('../img/slidesoft.png');
 }
 
 .menu__content {
