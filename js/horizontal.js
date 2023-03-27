@@ -1,10 +1,10 @@
 const itemOpen = (item) => {
-  $(item).addClass("isActive");
+  $(item).addClass("menu__content--active");
 };
 
 const itemClose = (item) => {
   let container = $(item);
-  $(container).removeClass("isActive");
+  $(container).removeClass("menu__content--active");
 };
 
 $(".menu__item").on("click", (event) => {
@@ -15,7 +15,7 @@ $(".menu__item").on("click", (event) => {
   let contentSiblings = $(allSiblings).find(".menu__content");
   let currentContent = $($(parent)).find(".menu__content");
 
-  if ($(currentContent).hasClass("isActive")) {
+  if ($(currentContent).hasClass("menu__content--active")) {
     itemClose(currentContent);
   } else {
     itemClose(contentSiblings);

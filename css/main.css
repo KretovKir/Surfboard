@@ -916,15 +916,15 @@ h1, h2, h3, h4, p {
 }
 
 .reviews__user--girl {
-  background: url(../../../img/girl.png) center/cover no-repeat;
+  background: url("../img/girl.png") center/cover no-repeat;
 }
 
 .reviews__user--man {
-  background: url(../../../img/man.png) center/cover no-repeat;
+  background: url("../img/man.png") center/cover no-repeat;
 }
 
 .reviews__user--girl2 {
-  background: url(../../../img/girl2.png) center/cover no-repeat;
+  background: url("../img/girl2.png") center/cover no-repeat;
 }
 
 .review__userlist {
@@ -2076,20 +2076,20 @@ h1, h2, h3, h4, p {
 
 .menu__item-title {
   width: 6.375rem;
-  height: 100%;
+  height: 100vh;
   color: transparent;
 }
 
 .menu__item-title--long {
-  background: url("../img/longslide.png");
+  background: url("../img/longslide.png") center center/cover no-repeat;
 }
 
 .menu__item-title--short {
-  background: url("../img/slideshort.png");
+  background: url("../img/slideshort.png") center center/cover no-repeat;
 }
 
 .menu__item-title--soft {
-  background: url("../img/slidesoft.png");
+  background: url("../img/slidesoft.png") center center/cover no-repeat;
 }
 
 .menu__content {
@@ -2099,6 +2099,11 @@ h1, h2, h3, h4, p {
   overflow: hidden;
   background: rgba(51, 53, 55, 0.9);
   color: white;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.menu__content--active {
+  width: 39.75rem;
 }
 
 .menu__content-utero {
@@ -2110,19 +2115,7 @@ h1, h2, h3, h4, p {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 25.375rem;
-}
-
-.menu__text {
   margin-top: 1.9375rem;
   margin-left: 2.375rem;
-  max-width: 25.375rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.isActive {
-  width: 39.75rem;
-  -webkit-transition: width, 0.5s;
-  transition: width, 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
