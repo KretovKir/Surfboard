@@ -4,22 +4,21 @@ const itemOpen = (item) => {
 
 const itemClose = (item) => {
   let container = $(item);
-  $(container).removeClass('isActive');
-
+  $(container).removeClass("isActive");
 };
 
 $(".menu__item").on("click", (event) => {
+  event.preventDefault();
   let $this = $(event.currentTarget);
-  let parent = $this.closest('.menu__item');
+  let parent = $this.closest(".menu__item");
   let allSiblings = $(parent).siblings();
-  let contentSiblings = $(allSiblings).find('.menu__content');
+  let contentSiblings = $(allSiblings).find(".menu__content");
   let currentContent = $($(parent)).find(".menu__content");
 
-  if($(currentContent).hasClass('isActive')){
+  if ($(currentContent).hasClass("isActive")) {
     itemClose(currentContent);
-  }else{
+  } else {
     itemClose(contentSiblings);
     itemOpen(currentContent);
   }
-
 });

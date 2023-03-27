@@ -2033,10 +2033,28 @@ h1, h2, h3, h4, p {
   max-width: 31.25rem;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url(/img/sea.jpg) center center/cover no-repeat rgba(255, 255, 255, 0.1);
+}
+
 .menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.menu__title {
+  font-size: 3rem;
+  line-height: 3.625rem;
+  color: white;
+  margin-top: 6.8125rem;
+  margin-left: 5.25rem;
 }
 
 .menu__accord {
@@ -2054,26 +2072,51 @@ h1, h2, h3, h4, p {
 
 .menu__main {
   position: relative;
-  width: 49.625rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
 }
 
 .menu__item-title {
-  background: orangered;
   width: 6.375rem;
-  height: 40.75rem;
-  border: 1px solid black;
+  height: 100%;
+  color: transparent;
+}
+
+.menu__item-title--long {
+  background: url(/img/longslide.png);
+}
+
+.menu__item-title--short {
+  background: url(/img/slideshort.png);
+}
+
+.menu__item-title--soft {
+  background: url(/img/slidesoft.png);
 }
 
 .menu__content {
-  display: none;
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  background: rgba(51, 53, 55, 0.9);
+  color: white;
 }
 
-.isActive {
+.menu__content-utero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.isActive {
   width: 39.75rem;
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
+  -webkit-transition: width, 0.5s;
+  transition: width, 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
