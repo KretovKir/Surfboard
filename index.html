@@ -763,7 +763,8 @@
         <button id="modal__button btn">Закрыть</button>
       </div>
 
-      <section class="map section">
+      <section class="map section"  id="map-block"> <!--Странное поведение, если ставить id на секцию, то работает карта, но пропадает футер, если ставить на div, что ниже, то карта не рабоает, хотя id map-block на нем висит-->
+        <div class = "map-block"></div>
         <footer class="footer">
           <div class="container">
             <div class="footer__content">
@@ -827,6 +828,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/team.js"></script>
-  <script src="js/modal.js"></script>
+  <script src="js/modal.js"></script> 
   <script src="js/horizontal.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
 </html>

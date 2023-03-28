@@ -1734,7 +1734,15 @@ h1, h2, h3, h4, p {
 }
 
 .map {
-  background: url("../img/map.svg") center/cover no-repeat;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.map-block {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
@@ -1743,6 +1751,7 @@ h1, h2, h3, h4, p {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .footer__content {
@@ -2071,7 +2080,6 @@ h1, h2, h3, h4, p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 100%;
 }
 
 .menu__item-title {

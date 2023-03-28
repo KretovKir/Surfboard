@@ -1,5 +1,18 @@
+const mesureWidth = item =>{
+  const screenWidth = $(window).width();
+  const container = $(item).closest('.menu__accord');
+  const titlesBlocks = $(container).find('.menu__item-title');
+  const titleWidth = $(titlesBlocks).width() * titlesBlocks.length; 
+
+  console.log(titleWidth);
+  return screenWidth - titleWidth;
+
+}
+
 const itemOpen = (item) => {
   $(item).addClass("menu__content--active");
+  // const reqWidth = mesureWidth(item);
+  // item.width(reqWidth);
 };
 
 const itemClose = (item) => {
