@@ -1,0 +1,6 @@
+.player__wrapper {
+  background-color: #404040;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

@@ -2126,4 +2126,32 @@ h1, h2, h3, h4, p {
   margin-top: 1.9375rem;
   margin-left: 2.375rem;
 }
+
+.player-section__container {
+  background-color: #404040;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.1875rem;
+}
+
+.player__controls {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.5625rem;
+  margin-left: 1.0625rem;
+  margin-right: 1.875rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.player__start {
+  background-color: white;
+  width: 0.6875rem;
+  height: 1rem;
+  margin-right: 1.875rem;
+}
 /*# sourceMappingURL=main.css.map */

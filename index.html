@@ -565,9 +565,9 @@
                 <!-- <button class="menu__close">X</button> -->
                 <span class="menu__text">
                   Устойчивая доска для новичков. На них легко лежать, сидеть,
-                  грести, разгребаться на волны и ехать. Размер и плавучесть доски
-                  позволяет брать очень маленькие и пологие волны и не спеша, не
-                  прилагая особых усилий ехать по ним.
+                  грести, разгребаться на волны и ехать. Размер и плавучесть
+                  доски позволяет брать очень маленькие и пологие волны и не
+                  спеша, не прилагая особых усилий ехать по ним.
                 </span>
               </div>
             </div>
@@ -670,6 +670,30 @@
         </div>
       </section>
 
+      <section class="player-section section">
+        <div class="container">
+          <h2 class="section-title">Как мы работаем</h2>
+          <div class="player-section__container">
+            <div class="player active" id="player">
+              <div class="player__wrapper">
+                <div id="yt-player" class="player__elem"></div>
+                <div class="player__splash"></div>
+              </div>
+              <div class="player__controls">
+                <button class="player__start"></button>
+                <div class="player__playback">
+                  <button class="player__playback-button"></button>
+                </div>
+                <div class="player__duration">
+                  <span class="player__duration-completed">00:00</span>
+                  <span class="player__duration-estimate">00:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="order section">
         <div class="container forms__container">
           <div class="order__title section__title">ЗАКАЖИТЕ ДОСКУ</div>
@@ -763,8 +787,8 @@
         <button id="modal__button btn">Закрыть</button>
       </div>
 
-      <section class="map section"  id="map-block"> <!--Странное поведение, если ставить id на секцию, то работает карта, но пропадает футер, если ставить на div, что ниже, то карта не рабоает, хотя id map-block на нем висит-->
-        <div class = "map-block"></div>
+      <section class="map section" id="map-block">
+        <div class="map-block"></div>
         <footer class="footer">
           <div class="container">
             <div class="footer__content">
@@ -828,8 +852,13 @@
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/team.js"></script>
-  <script src="js/modal.js"></script> 
+  <script src="js/modal.js"></script>
   <script src="js/horizontal.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script
+    src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+    type="text/javascript"
+  ></script>
   <script src="js/map.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/player.js"></script>
 </html>
