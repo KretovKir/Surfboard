@@ -2127,25 +2127,32 @@ h1, h2, h3, h4, p {
   margin-left: 2.375rem;
 }
 
+.player {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .player-section__container {
+  display: block;
+}
+
+.player__controls {
+  width: 41.375rem;
   background-color: #404040;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 2.1875rem;
-}
-
-.player__controls {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0.5625rem;
-  margin-left: 1.0625rem;
-  margin-right: 1.875rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0.5625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1.0625rem;
+  padding-right: 1.0625rem;
 }
 
 .player__start {

@@ -1,17 +1,29 @@
+.player{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
 .player-section__container {
-  background-color: #404040;
-  display: flex;
-  height: rem(35px);
+  display: block;
+  
 }
 
 .player__controls {
-  width: 100%;
+  width: rem(662px);
+  background-color: #404040;
   display: flex;
-  margin-top: rem(9px);
-  margin-left: rem(17px);
-  margin-right: rem(30px);
   justify-content: space-between;
+  align-items: center;
+  padding-top: rem(9px);
+  padding-bottom: rem(10px);
+  padding-left: rem(17px);
+  padding-right: rem(17px);
 }
+
+// .player__playback-button{
+//     flex: 1;
+// }
 
 .player__start {
   background-color: white;
