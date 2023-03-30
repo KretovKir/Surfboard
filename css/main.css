@@ -318,6 +318,7 @@ template {
 
 html {
   font-size: 16px;
+  height: 100%;
 }
 @media (max-width: 480px) {
   html {
@@ -329,7 +330,7 @@ body {
   font-family: "Alegreya Sans";
   margin: 0;
   padding: 0;
-  min-height: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -522,6 +523,21 @@ h1, h2, h3, h4, p {
   background-color: white;
   height: 4px;
   border-radius: 4px;
+}
+
+.wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 @media (max-width: 480px) {
@@ -1749,7 +1765,7 @@ h1, h2, h3, h4, p {
 
 .footer {
   background: #fff;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;

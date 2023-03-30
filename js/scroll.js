@@ -1,0 +1,47 @@
+const sections = $(".section");
+const display = $(".maincontent");
+sections.first().addClass("active");
+let inScroll = false;
+
+
+
+const performTransition = (sectionEq) => {
+    if(inScroll===false){
+        inScroll=true;
+        const position = sectionEq * -100;
+        display.css({
+          transform: `translateY(${position}%)`,
+        });
+        sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
+        setTimeout(()=>{
+            inScroll=false;
+        },1300)
+    }
+};
+
+const scrollViewport = (direction) => {
+  const activeSection = sections.filter(".active");
+  const nextSection = activeSection.next();
+  const prevSection = activeSection.prev();
+
+  if (direction === "next" && nextSection.length) {
+      performTransition(nextSection.index());
+  }
+  if (direction === "prev" && prevSection.length) {
+        performTransition(prevSection.index());
+    }
+};
+
+$(window).on("wheel", (event) => {
+  const deltaY = event.originalEvent.deltaY;
+  if (deltaY > 0) {
+    //next
+    scrollViewport("next");
+  }
+  if (deltaY < 0) {
+    //prev
+    scrollViewport("prev");
+  }
+
+});
+

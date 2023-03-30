@@ -2,8 +2,14 @@ sendBtn.addEventListener('click', (event)=>{
     event.preventDefault();
     if (validateForm(form)){
         console.log('ок')
+        ///////////////////////////////////////// Убрать, когда будет реализована проверка на получение данных с сервера 
+    $.fancybox.open({
+        src: '#modal',
+        type: 'inline'
+    })
     }else{
         console.log('Ошибка');
+        
     }
 })
 

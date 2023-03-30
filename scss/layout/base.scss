@@ -8,7 +8,7 @@ $mobile: 480px;
 
 html{
     font-size: $projectFontSize;
-
+    height: 100%;
     @include phone{
         font-size: 3.3333333333vmin;
     }
@@ -18,7 +18,7 @@ body{
     font-family: 'Alegreya Sans';
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    height: 100%;
     position: relative;
 }
 
@@ -184,3 +184,14 @@ h1,h2,h3,h4,p{
 
 }
 
+.wrapper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.maincontent{
+    height: 100%;
+    transition: transform 1s;
+}
