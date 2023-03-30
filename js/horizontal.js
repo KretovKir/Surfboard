@@ -1,37 +1,55 @@
 const mesureWidth = item =>{
+  let width = 524;
   const screenWidth = $(window).width();
-  const container = $(item).closest('.menu__accord');
-  const titlesBlocks = $(container).find('.menu__item-title');
-  const titleWidth = $(titlesBlocks).width() * titlesBlocks.length; 
+  const container = item.closest('.menu__accord');
+  const titlesBlocks =container.find('.menu__item-title');
+  const titleWidth = titlesBlocks.width() * titlesBlocks.length; 
 
   console.log(titleWidth);
-  return screenWidth - titleWidth;
+
+  const isTablet = window.matchMedia('(max-width: 720px)').matches;
+  const isPhone = window.matchMedia('(max-width: 480px)').matches;
+
+  if (isTablet){
+    width = screenWidth - titleWidth;
+  }
+
+  if(isPhone){
+    width = screenWidth - titlesBlocks.width()
+  }
+  return width;
 
 }
 
 const itemOpen = (item) => {
-  $(item).addClass("menu__content--active");
-  // const reqWidth = mesureWidth(item);
-  // item.width(reqWidth);
+  const itemContent = item.find('.menu__content');
+  const contentTextBox = itemContent.find('.menu__content-utero');
+
+  const reqWidth = mesureWidth(item);
+  item.addClass('menu__item--active');
+  itemContent.width(reqWidth);
+  contentTextBox.width(reqWidth);
 };
 
-const itemClose = (item) => {
-  let container = $(item);
-  $(container).removeClass("menu__content--active");
+const closeEveryItem = (container) => {
+  const menuItems = container.find('.menu__item');
+  const itemsContent = menuItems.find('.menu__content');
+
+  menuItems.removeClass('menu__item--active');
+  itemsContent.width(0);
 };
 
-$(".menu__item").on("click", (event) => {
+$(".menu__item-title").on("click", (event) => {
   event.preventDefault();
   let $this = $(event.currentTarget);
-  let parent = $this.closest(".menu__item");
-  let allSiblings = $(parent).siblings();
-  let contentSiblings = $(allSiblings).find(".menu__content");
-  let currentContent = $($(parent)).find(".menu__content");
+  let item = $this.closest(".menu__item");
+  let itemOpened = item.hasClass('menu__item--active');
+  const container = $this.closest('.menu__accord')
 
-  if ($(currentContent).hasClass("menu__content--active")) {
-    itemClose(currentContent);
+  if (itemOpened) {
+    closeEveryItem(container);
   } else {
-    itemClose(contentSiblings);
-    itemOpen(currentContent);
+    closeEveryItem(container);
+    itemOpen(item);
   }
 });

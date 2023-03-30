@@ -1,56 +1,82 @@
 .menu {
-  display: flex;
-  justify-content: space-between;
-  background: url('../img/sea.jpg') center center / cover no-repeat
+  position: relative;
+  background: url("../img/sea.jpg") center center / cover no-repeat
     rgba(255, 255, 255, 0.1);
+  color: white;
 }
 .menu__item {
   display: flex;
+
+  @include phone{
+    &--active{
+      position: absolute;
+      top: 0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+  }
 }
 
 .menu__title {
+  position: absolute;
   font-size: rem(48px);
   line-height: rem(58px);
   color: white;
-  margin-top: rem(109px);
-  margin-left: rem(84px);
+  top: rem(109px);
+  left: rem(84px);
+}
 
+.menu__title-text {
+  position: absolute;
+  z-index: 1;
+  font-size: rem(48px);
+  line-height: rem(58px);
+  font-weight: bold;
+  bottom: rem(39px);
+  left: 50%;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
 }
 
 .menu__accord {
   display: flex;
   justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
-
-.menu__main {
-  position: relative;
-  flex: 1;
-  // height: 100%;
-}
-
-// .menu__text{
-//     margin-top: rem(31px);
-//     margin-left: rem(38px);
-// }
 
 .menu__item-title {
   width: rem(102px);
-  height: 100vh;
-  color: transparent;
-  // position: absolute;
-  // z-index: 1;
+  position: relative;
+  color: white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 50%;
+  }
 }
 
 .menu__item-title--long {
-  background: url('../img/longslide.png') center center / cover no-repeat;
+  background: url("../img/longslide.jpg") center center / cover no-repeat;
 }
 
 .menu__item-title--short {
-  background: url('../img/slideshort.png') center center / cover no-repeat;
+  background: url("../img/shortslide.jpg") center center / cover no-repeat;
 }
 
 .menu__item-title--soft {
-  background: url('../img/slidesoft.png') center center / cover no-repeat;
+  background: url("../img/lastslide.jpg") center center / cover no-repeat;
 }
 
 .menu__content {
@@ -61,43 +87,13 @@
   background: rgba(51, 53, 55, 0.9);
   color: white;
   transition: width 0.5s;
-
-  &--active{
-    width: rem(636px);
-  }
 }
 
 .menu__content-utero {
   display: flex;
   flex-direction: column;
-  max-width: rem(406px);
-  margin-top: rem(31px);
-  margin-left: rem(38px);
 }
 
-// .menu__close {
-//   position: absolute;
-//   top: rem(30px);
-//   left: 90%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: transparent;
-//   border: transparent;
-//   cursor: pointer;
-//   color: #ccc;
-//   width: rem(30px);
-//   height: rem(30px);
-// }
-
-// .menu__text {
-//   margin-top: rem(31px);
-//   margin-left: rem(38px);
-//   max-width: rem(406px);
-//   font-size: rem(16px);
-//   line-height: rem(24px);
-// }
-// .isActive {
-//   width: rem(636px);
-//   transition: width, 0.5s;
-// }
+.menu__text{
+  padding: rem(40px);
+}

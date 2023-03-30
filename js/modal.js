@@ -1,4 +1,4 @@
-$('.form').on('submit', event =>{
+$('#form').on('submit', event =>{
     event.preventDefault();
 
     $.fancybox.open({
