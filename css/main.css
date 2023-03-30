@@ -2039,8 +2039,14 @@ h1, h2, h3, h4, p {
   color: #666666;
 }
 
-#modal {
+.modal {
+  display: none;
   max-width: 31.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .menu {
