@@ -45,3 +45,19 @@ $(window).on("wheel", (event) => {
 
 });
 
+$(window).on('keydown', event =>{
+    console.log(event.keyCode)
+    let tagName = event.target.tagName.toLowerCase();
+    if(tagName!=='input' && tagName!=='textarea'){
+        switch (event.keyCode) {
+            case 38:
+            scrollViewport("prev");
+                break;
+        
+            case 40:
+            scrollViewport("next");
+                break;
+        }
+    }
+})
+
