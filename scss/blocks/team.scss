@@ -5,23 +5,23 @@
   align-items: center;
   text-align: center;
 
-  &--mobile{
-    display: none;
-  }
+  // &--mobile{
+  //   display: none;
+  // }
 
-  @include tablets{
-    &--desktop{
-      display: none;
-    }
-  }
-  @include phone{
-    &--desktop{
-      display: none;
-    }
-    &--mobile{
-      display: flex;
-    }
-  }
+  // @include tablets{
+  //   &--desktop{
+  //     display: none;
+  //   }
+  // }
+  // @include phone{
+  //   &--desktop{
+  //     display: none;
+  //   }
+  //   &--mobile{
+  //     display: flex;
+  //   }
+  // }
 
 }
 
@@ -109,6 +109,23 @@
 
 .team__member {
   margin-bottom: rem(21px);
+
+  &--desktop{
+
+    @include tablets{
+      display: none;
+    }
+  }
+
+  &--mobile{
+    display: none;
+    @include phone{
+      display: block;
+    }
+    @include tablets{
+      display: block;
+    }
+  }
 }
 
 .team__item-job {

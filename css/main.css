@@ -1801,6 +1801,7 @@ h1, h2, h3, h4, p {
 
 .map {
   display: block;
+  position: relative;
 }
 
 .map-block {
@@ -1811,7 +1812,7 @@ h1, h2, h3, h4, p {
 
 .footer {
   background: #fff;
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1966,24 +1967,6 @@ h1, h2, h3, h4, p {
           align-items: center;
   text-align: center;
 }
-.team--mobile {
-  display: none;
-}
-@media (max-width: 1023px) {
-  .team--desktop {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
-  .team--desktop {
-    display: none;
-  }
-  .team--mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 
 .team__title {
   margin-bottom: 3.3125rem;
@@ -2088,6 +2071,24 @@ h1, h2, h3, h4, p {
 .team__member {
   margin-bottom: 1.3125rem;
 }
+@media (max-width: 1023px) {
+  .team__member--desktop {
+    display: none;
+  }
+}
+.team__member--mobile {
+  display: none;
+}
+@media (max-width: 480px) {
+  .team__member--mobile {
+    display: block;
+  }
+}
+@media (max-width: 1023px) {
+  .team__member--mobile {
+    display: block;
+  }
+}
 
 .team__item-job {
   margin-bottom: 0.3125rem;
@@ -2103,13 +2104,6 @@ h1, h2, h3, h4, p {
 
 .modal {
   display: none;
-  max-width: 31.25rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
 }
 
 .menu {
