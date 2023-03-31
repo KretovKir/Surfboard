@@ -15,6 +15,7 @@
     "bxslider": "^4.2.14",
     "fancybox": "^3.0.1",
     "gulp": "^4.0.2",
+    "mobile-detect": "^1.4.5",
     "webpack": "^5.77.0"
   }
 }

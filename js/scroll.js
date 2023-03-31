@@ -1,6 +1,9 @@
 const sections = $(".section");
 const display = $(".maincontent");
 sections.first().addClass("active");
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
 let inScroll = false;
 
 
@@ -96,3 +99,22 @@ $('.hidden__item').on('click', event =>{
     hidden.style.display = "none";
     performTransition(reqSection.index());
 })
+
+$('.wrapper').on('touchMove', event => event.preventDefault());
+
+if(isMobile){
+    $("body").on('swipe', {
+        swipe:function(event, direction) {
+          $(this).text("You swiped " + direction );  
+          const scroller = viewportScroller();
+          let scrollDirection ='';
+          if(scrollDirection==='up'){
+            scrollDirection="next";
+          } 
+          if(scrollDirection==='down'){
+            scrollDirection="prev";
+          } 
+          scroller[scrollDirection]();
+        }
+      });
+}
