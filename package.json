@@ -1,0 +1,20 @@
+{
+  "name": "surfboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.4"
+  },
+  "devDependencies": {
+    "bxslider": "^4.2.14",
+    "fancybox": "^3.0.1",
+    "gulp": "^4.0.2",
+    "webpack": "^5.77.0"
+  }
+}
