@@ -701,6 +701,7 @@
           <div class="container forms__container">
             <div class="order__title section__title">ЗАКАЖИТЕ ДОСКУ</div>
             <form class="form" id="form">
+              <input  type="hidden" name="to" value="some@mail.com"/>
               <div class="form__col">
                 <div class="form__row">
                   <label class="form__block">
@@ -710,7 +711,7 @@
                   </label>
                   <label class="form__block">
                     <div class="form__title">Телефон</div>
-                    <input type="tel" class="form__input" name="phone" required />
+                    <input type="tel" class="form__input" name="phone"  />
                     <div class="error"></div>
                   </label>
                 </div>
@@ -721,7 +722,7 @@
                       type="text"
                       class="form__input"
                       name="street"
-                      required
+                      
                     />
                     <div class="error"></div>
                   </label>
@@ -733,7 +734,7 @@
                       type="number"
                       class="form__input"
                       name="house"
-                      required
+                      
                     />
                     <div class="error"></div>
                   </label>
@@ -748,7 +749,7 @@
                       type="number"
                       class="form__input"
                       name="apartment"
-                      required
+                      
                     />
                     <div class="error"></div>
                   </label>
@@ -758,7 +759,7 @@
                       type="number"
                       class="form__input"
                       name="floor"
-                      required
+                      
                     />
                     <div class="error"></div>
                   </label>
