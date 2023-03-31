@@ -1254,6 +1254,51 @@ h1, h2, h3, h4, p {
   margin-right: 22px;
 }
 
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  width: 30px;
+}
+
+.fixed__item {
+  margin-bottom: 0.3125rem;
+  position: relative;
+}
+.fixed__item::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fixed__item--active .fixed-menu__link {
+  border: 1px solid white;
+}
+
+.fixed-menu__link {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  display: block;
+}
+
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -59,15 +59,15 @@
                 </div>
                 <nav class="navigation">
                   <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#">О нас</a></li>
-                    <li class="navigation__item"><a href="#">Серфборды</a></li>
-                    <li class="navigation__item"><a href="#">Команда</a></li>
-                    <li class="navigation__item"><a href="#">Меню</a></li>
-                    <li class="navigation__item"><a href="#">Отзывы</a></li>
-                    <li class="navigation__item">
-                      <a href="#">Как мы работаем</a>
+                    <li class="navigation__item" ><a href="#" data-scroll-to="why">О нас</a></li>
+                    <li class="navigation__item" ><a href="#" data-scroll-to="products">Серфборды</a></li>
+                    <li class="navigation__item" ><a href="#" data-scroll-to="team">Команда</a></li>
+                    <li class="navigation__item" ><a href="#" data-scroll-to="menu">Меню</a></li>
+                    <li class="navigation__item" ><a href="#" data-scroll-to="reviews">Отзывы</a></li>
+                    <li class="navigation__item" >
+                      <a href="#" data-section-id="video">Как мы работаем</a>
                     </li>
-                    <li class="navigation__item"><a href="#">Контакты</a></li>
+                    <li class="navigation__item" ><a href="#" data-scroll-to="contacts">Контакты</a></li>
                   </ul>
                 </nav>
                 <div class="contacts">
@@ -94,7 +94,7 @@
                 <p class="hero__description">
                   Самый большой выбор серфбордов в мире
                 </p>
-                <button class="btn yellow btn--hero">Заказать</button>
+                <button class="btn yellow btn--hero" data-scroll-to="products">Заказать</button>
               </div>
             </div>
   
@@ -128,7 +128,7 @@
           </div>
         </section>
   
-        <section class="why section">
+        <section class="why section" data-section-id="why">
           <div class="container">
             <div class="why__content">
               <div class="why__text">
@@ -192,7 +192,7 @@
           </div>
         </section>
   
-        <section class="products section">
+        <section class="products section" data-section-id="products">
           <div class="container">
             <div class="products__carousel">
               <button class="products__control products__control--left">
@@ -386,7 +386,7 @@
           </div>
         </section>
   
-        <section class="team section team--desktop">
+        <section class="team section team--desktop" data-section-id ="team">
           <div class="container">
             <h2 class="team__title section__title">Команда</h2>
             <ul class="team__items">
@@ -463,7 +463,7 @@
             </ul>
           </div>
         </section>
-        <section class="team section team--mobile">
+        <section class="team section team--mobile" data-section-id="team-mobile">
           <div class="container">
             <h2 class="team__title section__title">Команда</h2>
             <ul class="team__items">
@@ -541,7 +541,7 @@
           </div>
         </section>
   
-        <section class="menu section">
+        <section class="menu section" data-section-id="menu">
           <h2 class="menu__title">Меню</h2>
           <ul class="menu__accord" id="horizontalMenu">
             <li class="menu__item">
@@ -592,7 +592,7 @@
           </ul>
         </section>
   
-        <section class="reviews section">
+        <section class="reviews section" data-section-id="reviews">
           <div class="container reviews--container">
             <h2 class="reviews__title section__title">ОТЗЫВЫ</h2>
   
@@ -697,7 +697,7 @@
           </div>
         </section> -->
   
-        <section class="order section">
+        <section class="order section" data-section-id="order">
           <div class="container forms__container">
             <div class="order__title section__title">ЗАКАЖИТЕ ДОСКУ</div>
             <form class="form" id="form">
@@ -818,7 +818,7 @@
           </div>
         </section>
   
-        <section class="map section">
+        <section class="map section" data-section-id="contacts">
           <div class="map-block" id="map-block"></div>
           <footer class="footer">
             <div class="container">
@@ -883,6 +883,32 @@
             </div>
           </div>
         </div>
+
+        <nav class="fixed-menu">
+          <ul class="fixed-menu__list">
+            <li class="fixed__item fixed__item--active">
+              <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed__item">
+              <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed__item">
+              <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed__item">
+              <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed__item">
+              <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed__item">
+              <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed__item">
+              <a href="#" class="fixed-menu__link"></a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </body>

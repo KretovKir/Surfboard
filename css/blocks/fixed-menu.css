@@ -1,0 +1,23 @@
+.fixed-menu {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  width: 30px;
+}
+
+.fixed__item {
+  margin-bottom: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.fixed-menu__link {
+  border-radius: 50px;
+  background-color: black;
+}
