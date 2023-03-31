@@ -664,15 +664,23 @@
         </section>
 
         <section class="video section">
-          <div class="video-container container">
-            <h2 class="section__title">Как мы работаем</h2>
+          <h2 class="section__title">Как мы работаем</h2>
+          <div class="video-container">
+            
             <div class="video__player">
-              <video id="video-item" poster="img/play.svg">
-                <source src="img/blast.mp4" type="video/mp4"/>
-              </video>
+              <video id="video-item" src="img/blast.mp4" type="video/mp4" poster="img/play.svg"></video>
               <img src="img/play.svg" alt="play" class="play video__play" />
             </div>
-            <div class="video__toolbar"></div>
+            <div class="video__toolbar">
+              <div class="video__duration">
+                <img src="img/play.svg" class="small-play play" alt="play">
+                <input type="range" class='duration__length' id="durationLevel" min="0" max="3">
+              </div>
+              <div class="sound">
+                <img src="img/sound.svg" class="sound-icon" alt="sound">
+                <input type="range" class='duration__length duration__length--other' id="soundLevel" min="0" max="10">
+              </div>
+            </div>
           </div>
         </section>
 
