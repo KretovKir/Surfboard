@@ -62,7 +62,7 @@ $(window).on('keydown', event =>{
 })
 
 
-// Искать ошибку, не видит индекса reqSection 
+
 
 $('[data-scroll-to]').on('click', event=>{
     event.preventDefault();
@@ -73,3 +73,14 @@ $('[data-scroll-to]').on('click', event=>{
     performTransition(reqSection.index());
 })
 
+
+$('.fixed__item').on('click', event =>{
+    event.preventDefault();
+
+    const $this = $(event.currentTarget);
+    $this.addClass('fixed__item--active').siblings().removeClass('fixed__item--active');
+    const target = $this.attr('data-scroll-to');
+    const reqSection = $(`[data-section-id=${target}]`);
+    console.log(reqSection.index());
+    performTransition(reqSection.index());
+})
