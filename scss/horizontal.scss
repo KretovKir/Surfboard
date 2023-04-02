@@ -26,6 +26,15 @@
   color: white;
   top: rem(109px);
   left: rem(84px);
+
+  
+  @include phone{
+    position: absolute;
+    left: rem(10px);
+    top: rem(76px);
+    font-size: rem(40px);
+    line-height: rem(36px);
+  }
 }
 
 .menu__title-text {
@@ -38,6 +47,7 @@
   left: 50%;
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: 0 0;
+
 }
 
 .menu__accord {

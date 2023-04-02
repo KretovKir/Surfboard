@@ -34,6 +34,7 @@ sendBtn.addEventListener("click", (event) => {
       success: (data) => {
         console.log(data);
         $('.modal__text').text(data.message);
+        $('#modal').css('overflow','hidden');
         $.fancybox.open({
           src: "#modal",
           type: "inline",

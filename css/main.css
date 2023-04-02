@@ -2146,6 +2146,15 @@ h1, h2, h3, h4, p {
   top: 6.8125rem;
   left: 5.25rem;
 }
+@media (max-width: 480px) {
+  .menu__title {
+    position: absolute;
+    left: 0.625rem;
+    top: 4.75rem;
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+  }
+}
 
 .menu__title-text {
   position: absolute;
