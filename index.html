@@ -81,7 +81,7 @@
                       <a href="#" data-scroll-to="reviews">Отзывы</a>
                     </li>
                     <li class="navigation__item">
-                      <a href="#" data-section-id="video">Как мы работаем</a>
+                      <a href="#" data-scroll-to="video">Как мы работаем</a>
                     </li>
                     <li class="navigation__item">
                       <a href="#" data-scroll-to="contacts">Контакты</a>
@@ -666,19 +666,35 @@
         <section class="video section" data-section-id="video">
           <h2 class="section__title">Как мы работаем</h2>
           <div class="video-container">
-            
             <div class="video__player">
-              <video id="video-item" src="img/blast.mp4" type="video/mp4" poster="img/play.svg"></video>
+              <video
+                id="video-item"
+                src="img/blast.mp4"
+                type="video/mp4"
+                poster="img/play.svg"
+              ></video>
               <img src="img/play.svg" alt="play" class="play video__play" />
             </div>
             <div class="video__toolbar">
               <div class="video__duration">
-                <img src="img/play.svg" class="small-play play" alt="play">
-                <input type="range" class='duration__length' id="durationLevel" min="0" max="3">
+                <img src="img/play.svg" class="small-play play" alt="play" />
+                <input
+                  type="range"
+                  class="duration__length"
+                  id="durationLevel"
+                  min="0"
+                  max="3"
+                />
               </div>
               <div class="sound">
-                <img src="img/sound.svg" class="sound-icon" alt="sound">
-                <input type="range" class='duration__length duration__length--other' id="soundLevel" min="0" max="10">
+                <img src="img/sound.svg" class="sound-icon" alt="sound" />
+                <input
+                  type="range"
+                  class="duration__length duration__length--other"
+                  id="soundLevel"
+                  min="0"
+                  max="10"
+                />
               </div>
             </div>
           </div>
@@ -897,12 +913,14 @@
       </ul>
     </nav>
   </body>
-  <script src="js/jquery.js"></script>
-  <script src="js/burger.js"></script>
-  <script src="js/reviews.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"
+    integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
@@ -915,6 +933,8 @@
     type="text/javascript"
   ></script>
   <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/burger.js"></script>
+  <script src="js/reviews.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/team.js"></script>
   <script src="js/modal.js"></script>

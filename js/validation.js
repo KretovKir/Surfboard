@@ -91,6 +91,13 @@ function validateField(field) {
   }
 }
 
+
+
+$('.app-close-modal').on('click', () => {
+  $.fancybox.close()
+});
+
+
 // $("#form").on("submit", (event) => {
 //   event.preventDefault();
 

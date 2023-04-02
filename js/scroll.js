@@ -102,19 +102,17 @@ $('.hidden__item').on('click', event =>{
 
 $('.wrapper').on('touchMove', event => event.preventDefault());
 
-if(isMobile){
-    $("body").on('swipe', {
-        swipe:function(event, direction) {
-          $(this).text("You swiped " + direction );  
-          const scroller = viewportScroller();
-          let scrollDirection ='';
-          if(scrollDirection==='up'){
-            scrollDirection="next";
-          } 
-          if(scrollDirection==='down'){
-            scrollDirection="prev";
-          } 
-          scroller[scrollDirection]();
-        }
-      });
+if (isMobile) {
+  
+  $("body").swipe({
+    swipe: function (event, direction) {
+      if (direction === 'up') {
+        scrollViewport('next')
+      }
+      if (direction === 'down') {
+        scrollViewport('prev')
+      }
+
+    }
+  });
 }
