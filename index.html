@@ -663,7 +663,7 @@
           </div>
         </section>
 
-        <section class="video section" data-section-id="video">
+        <!-- <section class="video section" data-section-id="video">
           <h2 class="section__title">Как мы работаем</h2>
           <div class="video-container">
             <div class="video__player">
@@ -698,6 +698,40 @@
               </div>
             </div>
           </div>
+        </section> -->
+
+        <section class="video section" data-section-id="video">
+          <h2 class="section__title">Как мы работаем</h2>
+          <div class="video__container">
+            <div class="video__block">
+              <video controls src="/img/surfing.mp4" poster="/img/girlOnBoard.jpg" type="mp4" id="video" class="video-mp4"></video>
+              <img src="/img/play.svg" alt="play" class="play-btn play" id="play">
+            </div>
+            <div class="video__controls">
+              <div class="video__duration">
+                <img src="img/play.svg" class="small-play play" alt="play" />
+                <input
+                  type="range"
+                  class="duration__length"
+                  id="durationLevel"
+                  min="0"
+                  max="12"
+                />
+              </div>
+              <div class="sound">
+                <img src="img/sound.svg" class="sound-icon" alt="sound" />
+                <input
+                  type="range"
+                  class="duration__length duration__length--other"
+                  id="soundLevel"
+                  min="0"
+                  max="10"
+                />
+              </div>
+            </div>
+          </div>  
+          
+
         </section>
 
         <section class="order section" data-section-id="order">
@@ -932,7 +966,6 @@
     src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
     type="text/javascript"
   ></script>
-  <script src="https://www.youtube.com/iframe_api"></script>
   <script src="js/burger.js"></script>
   <script src="js/reviews.js"></script>
   <script src="js/slider.js"></script>
