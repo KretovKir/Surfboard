@@ -2264,10 +2264,6 @@ h1, h2, h3, h4, p {
   bottom: 0;
 }
 
-.video__container {
-  display: block;
-}
-
 .video__toolbar {
   background-color: black;
   width: 100%;
@@ -2302,6 +2298,10 @@ h1, h2, h3, h4, p {
 
 .duration__length {
   width: 27.8125rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: orange;
 }
 .duration__length--other {
   width: 3.625rem;

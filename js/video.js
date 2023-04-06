@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         soundControl.value = soundControl *10;
       }
       else{
-        soundLevel=video.volume;
+        soundControl=video.volume;
         video.volume = 0;
         soundControl.value=0;
       }

@@ -38,12 +38,6 @@
 }
 
 
-.video__container {
-  display: block;
-  
-  
-}
-
 .video__toolbar{
   background-color: black;
   width: 100%;
@@ -75,6 +69,8 @@
 
 .duration__length{
   width: rem(445px);
+  appearance: none;
+  background-color: orange;
   &--other{
     width: rem(58px);
   }
