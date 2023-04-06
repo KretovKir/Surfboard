@@ -134,6 +134,10 @@
   height: 100%;
 }
 
+#video{
+  object-fit: cover;
+}
+
 .play-btn{
   position: absolute;
   top: 50%;
@@ -141,4 +145,8 @@
   transform: translate(-50%, -50%);
   visibility: visible;
   cursor: pointer;
+
+  &--active{
+    visibility: hidden;
+  }
 }
