@@ -2312,6 +2312,7 @@ h1, h2, h3, h4, p {
   display: -ms-flexbox;
   display: flex;
   background-color: #404040;
+  margin-top: -0.3125rem;
 }
 
 .video {

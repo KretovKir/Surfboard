@@ -27,7 +27,6 @@
     height: 100%;
     object-fit: cover;
     position: relative;
-
 }
 
 .video__play{
@@ -85,6 +84,7 @@
 .video__controls{
   display: flex;
   background-color: #404040;
+  margin-top: rem(-5px);
 }
 
 
