@@ -15,9 +15,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   durationControl.value = 0;
   durationControl.min=0;
+  durationControl.max = Math.round(video.duration);
 
-  durationControl.addEventListener('mousedown', stopInterval);
-  durationControl.addEventListener('click', setVideoDuration);
+  
+  durationControl.addEventListener('input', setVideoDuration);
+
+  function mouseUp(){
+    setVideoDuration();
+    video.play();
+  }
 
     for (let i = 0; i<play.length; i++){
         play[i].addEventListener("click", ()=>{
@@ -25,7 +31,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           let playImg = document.querySelector('.play-btn');
           playImg.classList.toggle('play-btn--active');
 
-          durationControl.max = video.duration;
+
 
           if (video.paused) {
             video.play();
@@ -62,12 +68,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     function setVideoDuration(){
-      if(video.paused){
-        video.play();
+      // if(video.paused){
+      //   video.play();
 
-      }else{
-        video.pause();
-      }
+      // }else{
+      //   video.pause();
+      // }
 
       video.currentTime = durationControl.value;
       intervalId = setInterval(updateDuration, 1000/66);

@@ -16,6 +16,7 @@ const performTransition = (sectionEq) => {
           transform: `translateY(${position}%)`,
         });
         sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
+        $('.fixed__item').eq(sectionEq).addClass('fixed__item--active').siblings().removeClass('fixed__item--active');
         setTimeout(()=>{
             inScroll=false;
         },1300)
@@ -77,16 +78,16 @@ $('[data-scroll-to]').on('click', event=>{
 })
 
 
-$('.fixed__item').on('click', event =>{
-    event.preventDefault();
+// $('.fixed__item').on('click', event =>{
+//     event.preventDefault();
 
-    const $this = $(event.currentTarget);
-    $this.addClass('fixed__item--active').siblings().removeClass('fixed__item--active');
-    const target = $this.attr('data-scroll-to');
-    const reqSection = $(`[data-section-id=${target}]`);
-    console.log(reqSection.index());
-    performTransition(reqSection.index());
-})
+//     const $this = $(event.currentTarget);
+//     $this.addClass('fixed__item--active').siblings().removeClass('fixed__item--active');
+//     const target = $this.attr('data-scroll-to');
+//     const reqSection = $(`[data-section-id=${target}]`);
+//     console.log(reqSection.index());
+//     performTransition(reqSection.index());
+// })
 
 
 $('.hidden__item').on('click', event =>{
