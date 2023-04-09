@@ -91,16 +91,6 @@ $('[data-scroll-to]').on('click', event=>{
 // })
 
 
-$('.hidden__item').on('click', event =>{
-    event.preventDefault();
-    const $this = $(event.currentTarget);
-    $this.addClass('hidden__item--active').siblings().removeClass('hidden__item--active');
-    const target = $this.attr('data-scroll-to');
-    const reqSection = $(`[data-section-id=${target}]`);
-    console.log(reqSection.index());
-    hidden.style.display = "none";
-    performTransition(reqSection.index());
-})
 
 $('.wrapper').on('touchMove', event => event.preventDefault());
 
@@ -118,4 +108,4 @@ if (isMobile) {
     }
   });
 }
-})()
+})();

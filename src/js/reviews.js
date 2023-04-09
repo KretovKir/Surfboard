@@ -13,4 +13,4 @@
          $this.addClass('user-active').siblings().removeClass('user-active');
          showItem.addClass('active').siblings().removeClass('active');
      })
-})()
+})();

@@ -14,4 +14,4 @@
         e.preventDefault();
         slider.goToNextSlide();
     })
-})()
+})();

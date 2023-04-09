@@ -12,5 +12,12 @@
   closeCross.addEventListener("click", function (event) {
     hidden.style.display = "none";
   });
-  
-})()
+  hidden.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (e.target.classList.contains('hidden__link')) {
+      hidden.style.display = "none";
+    }
+  })
+
+})();
