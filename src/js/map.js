@@ -1,4 +1,5 @@
-let myMap;
+(function(){
+  let myMap;
 
 const init = () => {
   myMap = new ymaps.Map("map-block", {
@@ -34,3 +35,5 @@ const init = () => {
 };
 
 ymaps.ready(init);
+
+})();

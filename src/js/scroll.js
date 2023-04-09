@@ -1,4 +1,5 @@
-const sections = $(".section");
+(function(){
+  const sections = $(".section");
 const display = $(".maincontent");
 sections.first().addClass("active");
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
@@ -117,3 +118,4 @@ if (isMobile) {
     }
   });
 }
+})()

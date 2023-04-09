@@ -13,11 +13,13 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.4",
     "browser-sync": "^2.29.1",
     "bxslider": "^4.2.14",
     "fancybox": "^3.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-group-css-media-queries": "^1.2.2",
@@ -25,6 +27,8 @@
     "gulp-rm": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "mobile-detect": "^1.4.5",
     "node-sass": "^8.0.0",
     "sass": "^1.61.0",

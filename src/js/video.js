@@ -1,4 +1,5 @@
-let video;
+(function(){
+  let video;
 let play;
 let durationControl;
 let soundControl;
@@ -84,3 +85,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
 });
+})()

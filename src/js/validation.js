@@ -1,4 +1,5 @@
-const form = document.getElementById('form');
+(function(){
+  const form = document.getElementById('form');
 
 sendBtn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -127,3 +128,5 @@ $('.app-close-modal').on('click', () => {
 //     },
 //   });
 // });
+
+})();
