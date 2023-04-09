@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+
+//breakpoints
+$tablets: 768px;
+$mobile: 480px;
+
+html{
+    font-size: $projectFontSize;
+    height: 100%;
+    @include phone{
+        font-size: 3.3333333333vmin;
+    }
+}
+
+body{
+    font-family: 'Alegreya Sans';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+h1,h2,h3,h4,p{
+    margin:0
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+    @include tablets{
+        width: 95%;
+    }
+}
+
+.section{
+    // height: 100vh;
+    height: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+
+    @include tablets{
+        min-height: auto;
+    }
+
+    @include phone{
+        min-height: auto;
+    }
+    
+}
+
+.section__title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #292929;
+    
+    @include phone{
+        font-size: rem(40px);
+        line-height: rem(36px);
+    }
+}
+
+
+
+
+.btn{
+    display: block;
+    background: #FEDB3F;
+    color: black;
+    padding: rem(21px) rem(41px);
+    font-family: 'Alegreya Sans', sans-serif;
+    line-height: 18px;
+    font-weight: 800;
+    text-align: center;
+    border: transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.btn--theme--orange{
+    background: #FFD517;
+    color: black;
+    cursor: pointer;
+
+    &:hover{
+        background: black;
+        color: #FFD517;
+    }
+
+}
+
+.btn--theme--transparent{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    text-transform: none;
+}
+
+.hidden{
+    display: none;
+    @include tablets{
+        display: none;
+        position: fixed;
+        top: center;
+        left: center;
+        background: #313131;
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        z-index: 3;
+    }
+
+    @include phone{
+        z-index: 3;
+    }
+}
+
+.hidden__list{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: rem(36px);
+        line-height: rem(72px);
+        padding-bottom: rem(135px);
+}
+
+.hidden__cross{
+    width: 90vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: rem(73px);
+    margin-top: rem(42px);
+}
+
+.cross{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.hidden__link{
+    cursor: pointer;
+}
+
+
+.burger{
+    width: 24px;
+    height: 22px;
+    display: none;
+   @include tablets{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+   }
+}
+
+.burger__plank{
+    display: block;
+    background-color: white;
+    height: 4px;
+    border-radius: 4px;
+
+}
+
+
+.wrapper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.maincontent{
+    height: 100%;
+    transition: transform 1s;
+}

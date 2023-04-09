@@ -1,0 +1,174 @@
+.why {
+  text-align: center;
+}
+
+.why__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include phone {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.why__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 3%;
+  position: relative;
+  
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include phone {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: rem(35px);
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &-txt {
+    @include phone {
+      text-align: left;
+      max-width: rem(290px);
+      padding-top: rem(10px);
+    }
+  }
+
+  &:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: rem(60px);
+    right: rem(-30px);
+    width: rem(67px);
+    height: rem(21px);
+    background: url(../img/why.svg) center / contain no-repeat;
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  .why__img-box {
+    @include phone {
+      margin-right: rem(12px);
+    }
+  }
+}
+
+.why__icon {
+  width: rem(44px);
+  height: rem(68px);
+}
+
+
+.perfect-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.strong-icon{
+    width: 100%;
+    height: 100%;
+}
+
+.unique-icon{
+    width: 100%;
+    height: 100%;
+}
+
+.why__content {
+  @include phone {
+    // margin-bottom: rem(65px);
+  }
+  @include tablets {
+    // margin-bottom: rem(65px);
+  }
+}
+
+.why__text {
+  margin-bottom: rem(49px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include phone{
+    margin-bottom: rem(55px);
+  }
+}
+
+.why__img-box {
+  width: rem(128px);
+  height: rem(128px);
+  border-radius: 50%;
+  border: transparent;
+  background-color: #f2f5f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: rem(20px);
+
+  @include phone{
+    margin-bottom: 0;
+  }
+}
+
+.why__title {
+  color: #292929;
+  margin-bottom: rem(20px);
+  
+  @include tablets {
+  }
+
+  @include phone {
+    margin-bottom: 9px ;
+  }
+}
+
+.why__description {
+  padding: 0;
+  max-width: rem(437px);
+  font-size: rem(18px);
+  line-height: 21px;
+  font-weight: 400;
+  color: #666;
+  @include phone {
+    font-size: rem(18px);
+    line-height: rem(22px);
+  }
+}
+
+.why__card-title {
+  margin-bottom: rem(20px);
+  font-size: rem(27px);
+  line-height: rem(32px);
+
+  @include phone {
+    margin-bottom: rem(10px) ;
+  }
+}
+
+.why__card-text {
+  font-size: rem(18px);
+  line-height: rem(21px);
+  font-weight: 300;
+  color: #666;
+}

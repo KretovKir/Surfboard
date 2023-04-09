@@ -1,0 +1,141 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  // &--mobile{
+  //   display: none;
+  // }
+
+  // @include tablets{
+  //   &--desktop{
+  //     display: none;
+  //   }
+  // }
+  // @include phone{
+  //   &--desktop{
+  //     display: none;
+  //   }
+  //   &--mobile{
+  //     display: flex;
+  //   }
+  // }
+
+}
+
+
+
+
+.team__title{
+    margin-bottom: rem(53px);
+}
+
+.team__items {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @include phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.team__item {
+  width: rem(221px);
+  align-items: center;
+  text-align: center;
+}
+
+.team__img {
+  width: rem(220px);
+  height: rem(290px);
+}
+
+.team__item-title {
+  display: inline-flex;
+  border: none;
+  background: transparent;
+  margin-bottom: rem(8px);
+  font-size: rem(21px);
+  line-height: rem(25px);
+  cursor: pointer;
+
+  &::after{
+    margin-top: rem(9px);
+    margin-left: rem(5px);
+    // width: rem(9px);
+    // height: rem(4px);
+    content: '';
+    border: rem(9px) solid;
+    border-color: black transparent transparent transparent;
+  }
+}
+
+.team__item-content {
+  text-align: center;
+}
+
+// .team__item-drop {
+// overflow: hidden;
+// height: 0;
+// transition: height .3s;
+// }
+
+.team__item-drop{
+  overflow: hidden;
+  height: 0;
+  transition: height .3s;
+  
+  @include tablets{
+    margin-bottom: rem(20px);
+  }
+  @include phone{
+    margin-bottom: rem(20px);
+  }
+}
+
+
+
+
+.team__member {
+  margin-bottom: rem(21px);
+
+  &--desktop{
+
+    @include tablets{
+      display: none;
+    }
+  }
+
+  &--mobile{
+    display: none;
+    @include phone{
+      display: block;
+    }
+    @include tablets{
+      display: block;
+    }
+  }
+}
+
+.team__item-job {
+  margin-bottom: rem(5px);
+  font-size: rem(18px);
+  line-height: rem(22px);
+}
+
+.team__job-desc {
+  font-size: rem(18px);
+  line-height: rem(22px);
+  color: #666666;
+}

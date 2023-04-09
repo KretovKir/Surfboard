@@ -1,0 +1,23 @@
+@function rem($px){
+    @return $px/$projectFontSize + 0rem;
+}
+
+
+@mixin tablets{
+    @media(max-width: 1023px){
+        @content;
+    }
+}
+
+@mixin sevenHundred{
+    @media(max-width:700px){
+        @content;
+    }
+}
+
+@mixin phone{
+    @media(max-width: 480px){
+        @content;
+    }
+}
+

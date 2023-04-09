@@ -1,0 +1,233 @@
+.error{
+    color: red;
+}
+.order{
+    background: url('../img/forms-back.jpg') center / cover no-repeat;
+    position: relative;
+    color: white;
+
+    &::before{
+    content: '';
+    position: absolute;
+    background-color: #000;
+    opacity: 40%;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    }
+}
+.forms__container{
+    z-index: 1;
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.order__title{
+    text-align: center;
+    margin-bottom:rem(59px);
+    color: white;
+
+    @include tablets{
+        margin-bottom: rem(30px);
+    }
+    @include phone{
+        margin-bottom: rem(41px);
+    }
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: rem(466px);
+    }
+}
+
+.form__col{
+    flex: 1;
+    margin-right: 27px;
+   
+    &:last-child{
+        margin-right: 0px;
+    }
+    @include tablets{
+        margin-right: 0;
+    }
+}
+
+.form__row{
+    display: flex;
+    flex: 1;
+    margin-bottom: 12px;
+}
+
+.form__block{
+    flex: 1;
+    margin-right: 23px;
+    
+    
+
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.form__input{
+    width: 100%;
+    border: 3px solid transparent;
+    padding: 18px 12px;
+    border-radius: 4px;
+
+    &:focus{
+        border: 3px solid #FEDB3F;
+        outline:none;
+    }
+
+    &--textarea{
+        height: 152px;
+        resize: none;
+        display: block;
+
+        @include tablets{
+            height: rem(82px);
+        }
+    }
+
+    @include tablets{
+        padding: 7px 12px;
+    }
+}
+
+.form__row--area{
+    margin-bottom:38px;
+    @include tablets{
+        margin-bottom: rem(29px);
+    }
+
+    @include phone{
+        margin-bottom: rem(22px);
+    }
+}
+
+
+
+.form__title{
+    color:white;
+    font-size: rem(18px);
+    line-height: rem(22px);
+    margin-bottom: rem(2px);
+    text-align: left;
+}
+
+.radio{
+    display: flex;
+    margin-right: rem(18px);
+    margin-top: 0;
+    &:last-child{
+        margin-right:0;
+    }
+}
+
+.radio__title{
+    font-size: rem(18px);
+    font-weight: 200;
+    line-height: rem(22px);
+    letter-spacing: rem(0px);
+    text-align: left;
+
+}
+
+.form__controls{
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(20px);
+
+    &--point{
+        margin-bottom: rem(45px);
+
+        @include phone{
+            margin-bottom: rem(37px);
+        }
+    }
+
+    @include phone{
+        justify-content: center;
+        margin-bottom: rem(25px);
+    }
+}
+
+
+
+
+.radio__visible{
+    width: rem(25px);
+    height: rem(25px);
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: rem(10px);
+
+    &:before{
+        content:"";
+        width: rem(14px);
+        height: rem(14px);
+        border-radius: 50%;
+        background: #FEDB3F;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    
+}
+
+
+.radio--checkbox{
+    .radio__visible{
+        border-radius: 4px;
+        position: relative;
+        
+        &::before{
+            width: rem(14px);
+            height: rem(8px);
+            background-color: transparent;
+            border-radius: 0;
+            border-left: 2px solid #FEDB3F;
+            border-bottom: 2px solid #FEDB3F;
+            transform: rotate(-50deg);
+            position: absolute;
+            top:5px;
+            left: 5px;
+        
+     }  
+    }
+
+}
+.radio__elem{
+    display: none;
+
+    &:checked ~ .radio__visible{ 
+        &::before{
+            display: block;
+        }
+    }
+}
+
+.form__btns{
+    display: flex;
+    @include tablets{
+        justify-content: center;
+    }
+}
+
+
+

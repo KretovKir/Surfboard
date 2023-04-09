@@ -1,0 +1,37 @@
+.dropdown{
+    position: absolute;
+    top: 0;
+    left: -99999px;
+    padding: rem(18px) rem(14px);
+    background-color: #d6d6d6;
+    border-radius: 4px;
+    opacity: 0;
+    
+}
+
+
+.dropdown__row{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: rem(6px) rem(12px);
+    width: 273px;
+}
+
+.dropdown__icon{
+    width: rem(32px);
+    height: rem(32px);
+    margin-right: rem(16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dropdown__text{
+    line-height: 24px;
+}
+
+.dropdown__values{
+    margin-left: auto;
+}

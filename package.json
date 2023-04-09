@@ -13,6 +13,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "browser-sync": "^2.29.1",
     "bxslider": "^4.2.14",
     "fancybox": "^3.0.1",
     "gulp": "^4.0.2",

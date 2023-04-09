@@ -1,0 +1,13 @@
+.header{
+    
+    @include phone{
+        padding: 0;
+    }
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
