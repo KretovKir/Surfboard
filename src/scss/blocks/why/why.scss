@@ -10,6 +10,7 @@
   @include phone {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -46,7 +47,7 @@
 
   &-txt {
     @include phone {
-      text-align: left;
+      text-align:center;
       max-width: rem(290px);
       padding-top: rem(10px);
     }
